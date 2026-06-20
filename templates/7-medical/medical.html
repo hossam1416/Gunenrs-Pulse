@@ -1,0 +1,589 @@
+{% load static %}
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gunners Pulse — Medical Center</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    />
+    <link rel="stylesheet" href="{% static 'css/medical.css' %}" />
+  </head>
+  <body>
+    <div class="app-wrapper">
+      <!-- SIDEBAR -->
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-logo">
+          <img
+            class="siteLogo"
+            id="siteLogo"
+            src="{% static 'images/white_gun.jpg' %}"
+            alt="Gunners Pulse"
+            onerror="this.style.display = 'none'"
+          />
+        </div>
+        <nav class="sidebar-nav">
+          <a class="nav-link-item" href="{% url 'home' %}"
+            ><span class="material-symbols-outlined">home</span
+            ><span>Home</span></a
+          >
+          <a class="nav-link-item" href="{% url 'basic' %}"
+            ><span class="material-symbols-outlined">monitoring</span
+            ><span>Player Performance</span></a
+          >
+          <a class="nav-link-item" href="{% url 'compare_players' %}"
+            ><span class="material-symbols-outlined">compare_arrows</span
+            ><span>Compare Player</span></a
+          >
+          <a class="nav-link-item" href="{% url 'tactics_page' %}">
+            <span class="material-symbols-outlined">strategy</span
+            ><span>Tactics</span></a
+          >
+          <a class="nav-link-item" href="{% url 'training' %}"
+            ><span class="material-symbols-outlined">fitness_center</span
+            ><span>Training</span></a
+          >
+          <a class="nav-link-item active" href="{% url 'medical_center' %}"
+            ><span class="material-symbols-outlined">medical_services</span
+            ><span>Medical Center</span></a
+          >
+          <a class="nav-link-item" href="{% url 'calendar_month' %}">
+            <span class="material-symbols-outlined">calendar_month</span
+            ><span>Calendar</span></a
+          >
+          <a class="nav-link-item" href="{% url 'admin:index' %}"
+            ><span class="material-symbols-outlined">settings</span
+            ><span>Setting</span></a
+          >
+        </nav>
+        <div class="sidebar-footer">
+          <a class="nav-link-item" href="{% url 'logout' %}"
+            ><span class="material-symbols-outlined">logout</span
+            ><span>Logout</span></a
+          >
+        </div>
+      </aside>
+
+      <div class="mob-overlay" id="mobOverlay"></div>
+
+      <!-- MAIN -->
+      <main class="main-content">
+        <header class="top-header">
+          <button class="hamburger-btn" id="hamburgerBtn">
+            <span class="material-symbols-outlined">menu</span>
+          </button>
+          <div class="header-title">
+            <h1>Medical Center</h1>
+            <p>Gunners Pulse Performance Interface</p>
+          </div>
+          <div class="header-right">
+            <button class="theme-toggle-btn" id="themeToggle">
+              <span class="material-symbols-outlined" id="themeIcon"
+                >dark_mode</span
+              >
+            </button>
+            <button class="notif-btn">
+              <span class="material-symbols-outlined">notifications</span
+              ><span class="notif-dot"></span>
+            </button>
+            <div class="user-profile">
+              <div class="user-text">
+                <div class="user-name">Mikel Arteta</div>
+                <div class="user-role">Head Coach</div>
+              </div>
+              <img
+                class="avatar"
+                src="{% static 'images/arteta h.p.jpg' %}"
+                alt="Coach"
+                onerror="this.style.display = 'none'"
+              />
+            </div>
+          </div>
+        </header>
+
+        <div class="page-content">
+          <!-- Stat Cards (dynamic) -->
+          <div class="row g-3 mb-4">
+            <div class="col-6 col-lg-3">
+              <div class="med-stat-card">
+                <div class="d-flex justify-content-between mb-3">
+                  <span class="med-stat-label">Active Injuries</span>
+                  <div class="med-stat-icon ico-red">
+                    <span class="material-symbols-outlined"
+                      >personal_injury</span
+                    >
+                  </div>
+                </div>
+                <div class="med-stat-value" id="statActiveInjuries">0</div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="med-stat-card">
+                <div class="d-flex justify-content-between mb-3">
+                  <span class="med-stat-label">Avg Fitness (Injured)</span>
+                  <div class="med-stat-icon ico-danger">
+                    <span class="material-symbols-outlined">monitor_heart</span>
+                  </div>
+                </div>
+                <div class="med-stat-value" id="statAvgFitness">—</div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="med-stat-card">
+                <div class="d-flex justify-content-between mb-3">
+                  <span class="med-stat-label">Doubtful Players</span>
+                  <div class="med-stat-icon ico-warn">
+                    <span class="material-symbols-outlined">emergency</span>
+                  </div>
+                </div>
+                <div class="med-stat-value" id="statDoubtful">0</div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="med-stat-card">
+                <div class="d-flex justify-content-between mb-3">
+                  <span class="med-stat-label">Fully Fit</span>
+                  <div class="med-stat-icon ico-good">
+                    <span class="material-symbols-outlined">check_circle</span>
+                  </div>
+                </div>
+                <div class="med-stat-value" id="statFit">0</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Toolbar -->
+          <div class="d-flex flex-wrap align-items-center gap-2 mb-4">
+            <button
+              class="med-btn-primary ms-auto"
+              data-bs-toggle="modal"
+              data-bs-target="#recordModal"
+            >
+              <span class="material-symbols-outlined">add</span> Record Injury
+            </button>
+          </div>
+
+          <!-- Injured Section -->
+          <div class="d-flex align-items-center justify-content-between mb-3">
+            <h2 class="med-section-title">
+              <span
+                class="material-symbols-outlined"
+                style="
+                  font-size: 18px;
+                  color: var(--primary);
+                  vertical-align: -3px;
+                "
+                >personal_injury</span
+              >
+              Injured Players
+            </h2>
+            <small style="color: var(--text-2); font-size: 11px"
+              >Click a card to view details</small
+            >
+          </div>
+          <div class="row g-4 mb-5" id="injuredGrid"></div>
+
+          <!-- Full Squad Section -->
+          <div
+            class="d-flex align-items-center justify-content-between mb-3 mt-2"
+          >
+            <h2 class="med-section-title">
+              <span
+                class="material-symbols-outlined"
+                style="font-size: 18px; color: #10b981; vertical-align: -3px"
+                >groups</span
+              >
+              Squad Fitness Overview
+            </h2>
+          </div>
+          <div class="row g-3 mb-4" id="squadGrid"></div>
+        </div>
+        <!-- /page-content -->
+      </main>
+    </div>
+    <!-- /app-wrapper -->
+
+    <!-- SIDE PANEL -->
+    <div class="panel-overlay" id="panelOverlay"></div>
+    <aside class="detail-panel" id="detailPanel">
+      <div class="panel-head">
+        <div>
+          <span class="panel-lbl-top">Player Details</span>
+          <div class="d-flex align-items-center gap-3 mt-2">
+            <img id="panelAvatar" src="" alt="" class="panel-avatar" />
+            <div>
+              <h4 id="panelName" class="panel-player-name"></h4>
+              <p id="panelSub" class="panel-player-sub"></p>
+            </div>
+          </div>
+        </div>
+        <button id="closePanelBtn" class="panel-close-btn">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      <div class="panel-body">
+        <!-- Player info row -->
+        <div class="row g-2 mb-4" id="panelInfoRow"></div>
+
+        <div class="panel-section-box mb-4">
+          <span class="med-section-lbl">Update Status</span>
+          <select class="med-select w-100">
+            <option>Fully Absent</option>
+            <option>Rehab — Gym</option>
+            <option>Rehab — Grass</option>
+            <option>Team Training</option>
+          </select>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h5 class="panel-timeline-title">Medical Timeline</h5>
+          <button class="panel-add-btn btn-open-panel-update">+ Add Note</button>
+        </div>
+        <div class="med-timeline">
+          <div class="med-tl-item">
+            <div class="med-tl-dot active"></div>
+            <p class="med-tl-date">Today, 10:30 AM • Dr. Gary O'Driscoll</p>
+            <div class="med-tl-note">
+              Physiotherapy session completed. Reported reduced pain (3/10).
+              Scheduled for light cycling tomorrow.
+            </div>
+          </div>
+          <div class="med-tl-item">
+            <div class="med-tl-dot"></div>
+            <p class="med-tl-date">12 Oct 2025, 09:00 AM • Scan Result</p>
+            <div class="med-tl-note">
+              MRI confirmed Grade 2 strain. Initial prognosis: 3–4 weeks
+              recovery.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel-foot">
+        <button class="inj-btn-outline flex-fill btn-open-panel-update">
+          Save Updates
+        </button>
+      </div>
+    </aside>
+
+    <!-- MODAL: Record Injury -->
+    <div class="modal fade" id="recordModal" tabindex="-1">
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+        style="max-width: 620px"
+      >
+        <form
+          method="POST"
+          action="{% url 'medical_add' %}"
+          class="modal-content med-modal"
+        >
+          {% csrf_token %}
+
+          <div class="modal-header med-modal-head">
+            <h5 class="modal-title">Record New Injury</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body p-4">
+            <div class="mb-3">
+              <label class="med-form-label">Select Player</label>
+              <select
+                id="recordPlayerSelect"
+                name="player_id"
+                class="med-select w-100"
+                required
+              >
+                <option value="" disabled selected>Select player…</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label class="med-form-label">Injury Diagnosis</label>
+              <input
+                type="text"
+                name="injury"
+                class="med-input w-100"
+                placeholder="e.g. Hamstring Strain, ACL Tear"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label class="med-form-label">Severity Level</label>
+              <div class="sev-group">
+                <label class="sev-pill">
+                  <input type="radio" name="severity" value="low" />
+                  <span>Low</span>
+                </label>
+                <label class="sev-pill">
+                  <input type="radio" name="severity" value="medium" />
+                  <span>Medium</span>
+                </label>
+                <label class="sev-pill">
+                  <input type="radio" name="severity" value="high" checked />
+                  <span>High</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="row g-3 mb-3">
+              <div class="col-6">
+                <label class="med-form-label">Date of Injury</label>
+                <input
+                  type="date"
+                  id="injuryDate"
+                  name="injury_date"
+                  class="med-input w-100"
+                  required
+                />
+              </div>
+              <div class="col-6">
+                <label class="med-form-label">Estimated Return Date</label>
+                <input
+                  type="date"
+                  name="return_date"
+                  class="med-input w-100"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label class="med-form-label">Current Status</label>
+              <select name="status" class="med-select w-100" required>
+                <option value="" disabled selected>Select status…</option>
+                <option value="Fully Absent">Fully Absent</option>
+                <option value="Light Training">Light Training</option>
+                <option value="Ready to Train">Ready to Train</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="med-form-label">Medical Notes</label>
+              <textarea
+                name="notes"
+                class="med-input w-100"
+                rows="4"
+                placeholder="Enter initial assessment details…"
+                style="height: auto; resize: none"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="modal-footer med-modal-foot">
+            <button
+              type="button"
+              class="inj-btn-outline"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button type="submit" class="med-btn-primary">
+              Save Injury Record
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- MODAL: Update Recovery -->
+    <div class="modal fade" id="updateModal" tabindex="-1">
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+        style="max-width: 640px"
+      >
+        <form method="POST" action="{% url 'medical_update' %}" class="modal-content med-modal">
+          {% csrf_token %}
+          <input type="hidden" name="player_id" id="updatePlayerId" />
+          <div class="modal-header med-modal-head">
+            <div class="d-flex align-items-center gap-3">
+              <img id="updateModalAvatar" src="" class="panel-avatar" alt="" />
+              <div>
+                <h5 id="updateModalPlayerName" class="modal-title">
+                  Update Recovery
+                </h5>
+                <p
+                  id="updateModalSubtitle"
+                  style="font-size: 11px; color: var(--text-2); margin: 0"
+                ></p>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body p-4">
+            <div class="mb-4">
+              <span class="med-section-lbl">1. Current Status</span>
+              <div class="status-grid">
+                <label class="status-box"
+                  ><input
+                    type="radio"
+                    name="upStatus"
+                    value="absent"
+                    checked
+                  /><span>Fully Absent</span></label
+                >
+                <label class="status-box"
+                  ><input type="radio" name="upStatus" value="light" /><span
+                    >Light Training</span
+                  ></label
+                >
+                <label class="status-box"
+                  ><input type="radio" name="upStatus" value="modified" /><span
+                    >Modified Drills</span
+                  ></label
+                >
+                <label class="status-box"
+                  ><input type="radio" name="upStatus" value="ready" /><span
+                    >Ready to Train</span
+                  ></label
+                >
+              </div>
+            </div>
+            <div class="row g-4 mb-4">
+              <div class="col-md-6">
+                <span class="med-section-lbl">2. Recovery Progress</span>
+                <div
+                  class="d-flex justify-content-between align-items-center mb-1"
+                >
+                  <span style="font-size: 11px; color: var(--text-2)"
+                    >0% → 100%</span
+                  >
+                  <span
+                    id="recoveryVal"
+                    style="
+                      font-size: 18px;
+                      font-weight: 900;
+                      color: var(--primary);
+                    "
+                    >0%</span
+                  >
+                </div>
+                  <input
+                  id="recoverySlider"
+                  name="recovery"
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="0"
+                  class="med-range w-100"
+                />
+              </div>
+              <div class="col-md-6">
+                <span class="med-section-lbl">3. Expected Return Date</span>
+                <div style="position: relative">
+                  <span
+                    class="material-symbols-outlined"
+                    style="
+                      position: absolute;
+                      left: 10px;
+                      top: 50%;
+                      transform: translateY(-50%);
+                      font-size: 17px;
+                      color: var(--text-2);
+                      pointer-events: none;
+                    "
+                    >calendar_today</span
+                  >
+                  <input
+                    name="return_date"
+                    type="date"
+                    class="med-input w-100"
+                    style="padding-left: 34px"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="mb-4">
+              <span class="med-section-lbl">4. Training Intensity</span>
+              <div class="intensity-row">
+                <label class="int-box"
+                  ><input
+                    type="radio"
+                    name="intensity"
+                    value="1"
+                    checked
+                  /><span>1</span></label
+                >
+                <label class="int-box"
+                  ><input type="radio" name="intensity" value="2" /><span
+                    >2</span
+                  ></label
+                >
+                <label class="int-box"
+                  ><input type="radio" name="intensity" value="3" /><span
+                    >3</span
+                  ></label
+                >
+                <label class="int-box"
+                  ><input type="radio" name="intensity" value="4" /><span
+                    >4</span
+                  ></label
+                >
+                <label class="int-box"
+                  ><input type="radio" name="intensity" value="5" /><span
+                    >5</span
+                  ></label
+                >
+              </div>
+            </div>
+            <div>
+              <span class="med-section-lbl">5. Treatment Notes</span>
+              <textarea
+                name="notes"
+                id="updateNotes"
+                class="med-input w-100"
+                rows="4"
+                placeholder="Enter latest medical observations…"
+                style="height: auto; resize: none"
+              ></textarea>
+            </div>
+          </div>
+          <div class="modal-footer med-modal-foot">
+            <button type="button" class="inj-btn-outline" data-bs-dismiss="modal">
+              Cancel
+            </button>
+            <button type="submit" class="med-btn-primary">Save Update</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div
+      id="toastContainer"
+      style="
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      "
+    ></div>
+    <script>
+      window.PLAYERS_DATA = {{ players_json|safe }};
+      window.INJURY_META_DATA = {{ injury_meta_json|safe }}; // 🚀 استلام تفاصيل الإصابات
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'js/medical-players.js' %}"></script>
+    <script src="{% static 'js/design-medical.js' %}"></script>
+    <script src="{% static 'js/medical.js' %}"></script>
+  </body>
+</html>

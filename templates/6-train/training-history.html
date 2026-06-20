@@ -1,0 +1,278 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Training History — Gunners Pulse</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'css/training.css' %}" />
+  </head>
+  <body>
+    <div class="mob-overlay" id="mobOverlay"></div>
+    <div class="app-wrapper">
+      <!-- SIDEBAR -->
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-logo">
+          <img
+            id="siteLogo"
+            src="{% static 'images/white gun.jpg' %}"
+            alt="Gunners Pulse"
+            onerror="this.style.display = 'none'"
+          />
+        </div>
+        <nav class="sidebar-nav">
+          <a class="nav-link-item" href="{% url 'home' %}">
+            <span class="material-symbols-outlined">home</span><span>Home</span>
+          </a>
+          <a class="nav-link-item" href="{% url 'basic' %}">
+            <span class="material-symbols-outlined">monitoring</span
+            ><span>Player Performance</span>
+          </a>
+          <a class="nav-link-item" href="{% url 'compare_players' %}">
+            <span class="material-symbols-outlined">compare_arrows</span
+            ><span>Compare Player</span>
+          </a>
+          <a class="nav-link-item" href="{% url 'tactics_page' %}">
+            <span class="material-symbols-outlined">strategy</span
+            ><span>Tactics</span>
+          </a>
+          <a class="nav-link-item active" href="{% url 'training' %}">
+            <span class="material-symbols-outlined">fitness_center</span
+            ><span>Training</span>
+          </a>
+          <a class="nav-link-item" href="{% url 'medical_center' %}">
+            <span class="material-symbols-outlined">medical_services</span
+            ><span>Medical Center</span>
+          </a>
+          <a class="nav-link-item" href="{% url 'calendar_month' %}">
+            <span class="material-symbols-outlined">calendar_month</span
+            ><span>Calendar</span>
+          </a>
+          <a class="nav-link-item" href="{% url 'admin:index' %}">
+            <span class="material-symbols-outlined">settings</span
+            ><span>Settings</span>
+          </a>
+        </nav>
+        <div class="sidebar-footer">
+          <a class="nav-link-item" href="{% url 'logout' %}">
+            <span class="material-symbols-outlined">logout</span
+            ><span>Logout</span>
+          </a>
+        </div>
+      </aside>
+
+      <!-- MAIN -->
+      <div class="app-content">
+        <!-- HEADER -->
+        <header class="top-header">
+          <button
+            class="hamburger-btn"
+            id="hamburgerBtn"
+            aria-label="Open menu"
+          >
+            <span class="material-symbols-outlined">menu</span>
+          </button>
+          <div>
+            <h1
+              class="fw-black text-uppercase mb-0"
+              style="font-size: 18px; letter-spacing: -0.5px"
+            >
+              Training History
+            </h1>
+            <p
+              class="header-subtitle mb-0"
+              style="
+                font-size: 9px;
+                letter-spacing: 0.15em;
+                text-transform: uppercase;
+                color: var(--text-2);
+              "
+            >
+              Gunners Pulse Performance Interface
+            </p>
+          </div>
+          <div class="d-flex align-items-center gap-2 ms-auto">
+            <!-- Back to session -->
+            <a
+              href="{% url 'training' %}"
+              class="hero-btn hero-btn-ghost d-flex align-items-center gap-1"
+              style="padding: 7px 14px; font-size: 11px; text-decoration: none"
+            >
+              <span class="material-symbols-outlined" style="font-size: 16px"
+                >arrow_back</span
+              >
+              Session
+            </a>
+            <button class="theme-toggle-btn" id="themeToggle">
+              <span class="material-symbols-outlined" id="themeIcon"
+                >dark_mode</span
+              >
+            </button>
+            <button class="notif-btn">
+              <span class="material-symbols-outlined">notifications</span>
+              <span class="notif-dot"></span>
+            </button>
+            <div class="user-profile d-none d-md-flex">
+              <div class="text-end">
+                <div class="user-name">Mikel Arteta</div>
+                <div class="user-role">Head Coach</div>
+              </div>
+              <img
+                class="avatar"
+                src="{% static 'images/arteta h.p.jpg' %}"
+                alt="Coach"
+                onerror="
+                  this.src =
+                    'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2234%22 height=%2234%22><rect width=%2234%22 height=%2234%22 rx=%2217%22 fill=%22%23EF0107%22/><text x=%2217%22 y=%2222%22 text-anchor=%22middle%22 fill=%22white%22 font-size=%2213%22 font-weight=%22700%22>MA</text></svg>'
+                "
+              />
+            </div>
+          </div>
+        </header>
+
+        <!-- HISTORY ROOT -->
+        <div class="history-root">
+          <!-- Toolbar -->
+          <div class="history-toolbar">
+            <div class="history-search">
+              <span class="material-symbols-outlined search-icon">search</span>
+              <input
+                type="text"
+                id="historySearch"
+                placeholder="Search sessions…"
+                autocomplete="off"
+              />
+            </div>
+            <div class="d-flex gap-2 flex-wrap">
+              <button class="hist-filter-btn active" data-filter="all">
+                All
+              </button>
+              <button class="hist-filter-btn" data-filter="week">
+                This Week
+              </button>
+              <button class="hist-filter-btn" data-filter="month">
+                This Month
+              </button>
+            </div>
+            <button
+              class="clear-all-btn"
+              id="clearAllBtn"
+              title="Clear all history"
+            >
+              <span class="material-symbols-outlined" style="font-size: 14px"
+                >delete_sweep</span
+              >
+              Clear All
+            </button>
+          </div>
+
+          <!-- Layout -->
+          <div class="history-layout">
+            <!-- LEFT: Session list -->
+            <div class="history-list-panel">
+              <div class="history-list-header">
+                <span
+                  class="fw-black text-uppercase"
+                  style="
+                    font-size: 11px;
+                    letter-spacing: 0.1em;
+                    color: var(--text-2);
+                  "
+                >
+                  Saved Sessions
+                </span>
+                <span
+                  id="session-count-badge"
+                  class="badge bg-danger bg-opacity-10 text-danger fw-bold"
+                  style="font-size: 10px"
+                  >0 sessions</span
+                >
+              </div>
+              <div class="history-list-scroll" id="historyList">
+                <!-- Populated by JS -->
+              </div>
+            </div>
+
+            <!-- RIGHT: Detail panel -->
+            <div class="history-detail-panel" id="detailPanel">
+              <!-- Mobile back button -->
+              <div
+                class="detail-back-btn"
+                style="
+                  display: none;
+                  padding: 10px 16px;
+                  border-bottom: 1px solid var(--border);
+                  flex-shrink: 0;
+                "
+              >
+                <button
+                  id="backToListBtn"
+                  class="hero-btn hero-btn-ghost"
+                  style="padding: 7px 14px; font-size: 11px; border: none"
+                >
+                  <span
+                    class="material-symbols-outlined"
+                    style="font-size: 16px"
+                    >arrow_back</span
+                  >
+                  All Sessions
+                </button>
+              </div>
+
+              <!-- Placeholder (no session selected) -->
+              <div class="detail-placeholder" id="detailPlaceholder">
+                <span class="material-symbols-outlined ph-icon">history</span>
+                <h3>Select a Session</h3>
+                <p>
+                  Choose a saved session from the left to view its full drill
+                  breakdown and squad assignments.
+                </p>
+              </div>
+
+              <!-- Actual detail (hidden until session chosen) -->
+              <div
+                id="detailContent"
+                style="
+                  display: none;
+                  flex-direction: column;
+                  overflow: hidden;
+                  flex: 1;
+                "
+              >
+                <!-- Hero -->
+                <div class="detail-hero" id="detailHero">
+                  <div class="detail-hero-date" id="detailDate">—</div>
+                  <div class="detail-hero-title" id="detailTitle">—</div>
+                  <div class="detail-stats-row" id="detailStatsRow">
+                    <!-- injected -->
+                  </div>
+                </div>
+
+                <!-- Body -->
+                <div class="detail-body" id="detailBody">
+                  <!-- injected -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /history-root -->
+      </div>
+      <!-- /app-content -->
+    </div>
+    <!-- /app-wrapper -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    {{ training_data|json_script:"training-data-json" }}
+    <script src="{% static 'js/training-data.js' %}"></script>
+    <script src="{% static 'js/training-history.js' %}"></script>
+  </body>
+</html>

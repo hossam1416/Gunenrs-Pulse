@@ -1,0 +1,741 @@
+{
+  "typeConfig": {
+    "match": {
+      "label": "Match",
+      "icon": "sports_soccer",
+      "badge": "MATCH DAY",
+      "short": "MATCH"
+    },
+    "training": {
+      "label": "Training",
+      "icon": "fitness_center",
+      "badge": "TRAINING",
+      "short": "TRAINING"
+    },
+    "set": {
+      "label": "Set Pieces",
+      "icon": "strategy",
+      "badge": "SET PIECES",
+      "short": "SET"
+    },
+    "recovery": {
+      "label": "Recovery",
+      "icon": "self_improvement",
+      "badge": "RECOVERY",
+      "short": "RECOVERY"
+    }
+  },
+  "events": [
+    {
+      "id": "s01",
+      "type": "set",
+      "date": "2026-03-10",
+      "time": "10:30",
+      "title": "Pre-Match Set Pieces",
+      "venue": "London Colney — Pitch B",
+      "notes": "Final set-piece prep before Leverkusen away. Corner variants and free-kick delivery."
+    },
+    {
+      "id": "m01",
+      "type": "match",
+      "date": "2026-03-11",
+      "time": "18:45",
+      "title": "Leverkusen vs Arsenal",
+      "venue": "BayArena, Leverkusen",
+      "notes": "UCL Round of 16 — 1st Leg. Away fixture. Press high, exploit Leverkusen wide."
+    },
+    {
+      "id": "r01",
+      "type": "recovery",
+      "date": "2026-03-12",
+      "time": "10:00",
+      "title": "Post-Match Recovery",
+      "venue": "London Colney — Gym",
+      "notes": "Ice baths, mobility work. No ball work today."
+    },
+    {
+      "id": "t01",
+      "type": "training",
+      "date": "2026-03-13",
+      "time": "10:00",
+      "title": "Tactical Review: Leverkusen",
+      "venue": "London Colney — Pitch A",
+      "notes": "Video debrief of 1st leg. Shape reset for NLD."
+    },
+    {
+      "id": "t02",
+      "type": "training",
+      "date": "2026-03-14",
+      "time": "10:00",
+      "title": "High Press Drill Session",
+      "venue": "London Colney — Pitch A",
+      "notes": "Full 11v11 pressing shape. Intensity building ahead of Spurs."
+    },
+    {
+      "id": "s02",
+      "type": "set",
+      "date": "2026-03-15",
+      "time": "10:30",
+      "title": "Set Piece Prep: North London Derby",
+      "venue": "London Colney — Pitch B",
+      "notes": "Near-post corner routines. Free-kick wall practice for Emirates."
+    },
+    {
+      "id": "m02",
+      "type": "match",
+      "date": "2026-03-16",
+      "time": "16:30",
+      "title": "Arsenal vs Tottenham",
+      "venue": "Emirates Stadium",
+      "notes": "PL GW31 — North London Derby. Must win to extend lead."
+    },
+    {
+      "id": "r02",
+      "type": "recovery",
+      "date": "2026-03-17",
+      "time": "09:30",
+      "title": "Post-Match Recovery",
+      "venue": "London Colney — Gym",
+      "notes": "Active recovery. Pool sessions + contrast therapy."
+    },
+    {
+      "id": "s03",
+      "type": "set",
+      "date": "2026-03-17",
+      "time": "14:00",
+      "title": "Set Piece Prep: UCL 2nd Leg",
+      "venue": "London Colney — Pitch A",
+      "notes": "Afternoon set-piece session after morning recovery. Leverkusen 2nd leg routines."
+    },
+    {
+      "id": "m03",
+      "type": "match",
+      "date": "2026-03-18",
+      "time": "20:00",
+      "title": "Arsenal vs Leverkusen",
+      "venue": "Emirates Stadium",
+      "notes": "UCL R16 2nd Leg. Win to advance to Quarter-Finals. Packed Emirates."
+    },
+    {
+      "id": "r03",
+      "type": "recovery",
+      "date": "2026-03-19",
+      "time": "10:00",
+      "title": "Post-Match Recovery",
+      "venue": "London Colney — Gym",
+      "notes": "Full squad recovery. Monitor Saka and Rice workloads."
+    },
+    {
+      "id": "t03",
+      "type": "training",
+      "date": "2026-03-20",
+      "time": "10:00",
+      "title": "Possession & Build-Up Drill",
+      "venue": "London Colney — Pitch A",
+      "notes": "Short passing triangles. Build from the back under pressure."
+    },
+    {
+      "id": "t04",
+      "type": "training",
+      "date": "2026-03-21",
+      "time": "10:00",
+      "title": "Finishing Session",
+      "venue": "London Colney — Pitch B",
+      "notes": "Striker + winger finishing combinations. Havertz, Martinelli, Saka."
+    },
+    {
+      "id": "s04",
+      "type": "set",
+      "date": "2026-03-21",
+      "time": "14:00",
+      "title": "Set Piece Prep: Stamford Bridge",
+      "venue": "London Colney — Pitch A",
+      "notes": "Review Chelsea defensive structure. Target far-post delivery."
+    },
+    {
+      "id": "m04",
+      "type": "match",
+      "date": "2026-03-22",
+      "time": "14:00",
+      "title": "Chelsea vs Arsenal",
+      "venue": "Stamford Bridge",
+      "notes": "PL GW32 — Away. Tight game expected. Defensive discipline key."
+    },
+    {
+      "id": "r04",
+      "type": "recovery",
+      "date": "2026-03-23",
+      "time": "10:00",
+      "title": "Post-Match Recovery",
+      "venue": "London Colney — Gym",
+      "notes": "Full squad. Tomiyasu and Gabriel minutes management."
+    },
+    {
+      "id": "t05",
+      "type": "training",
+      "date": "2026-03-24",
+      "time": "10:00",
+      "title": "Shape & Transition Drill",
+      "venue": "London Colney — Pitch A",
+      "notes": "Mid-block exit patterns. Rapid counter-attack sequences."
+    },
+    {
+      "id": "t06",
+      "type": "training",
+      "date": "2026-03-25",
+      "time": "10:00",
+      "title": "Technical Individual Work",
+      "venue": "London Colney — Pitch B",
+      "notes": "1v1 duels and positional play. Role-specific sessions."
+    },
+    {
+      "id": "t07",
+      "type": "training",
+      "date": "2026-03-26",
+      "time": "10:00",
+      "title": "International Break — Session A",
+      "venue": "London Colney — Pitch A",
+      "notes": "Reduced squad. Non-international players maintain shape."
+    },
+    {
+      "id": "t08",
+      "type": "training",
+      "date": "2026-03-27",
+      "time": "10:00",
+      "title": "International Break — Session B",
+      "venue": "London Colney — Pitch A",
+      "notes": "Fitness maintenance. Small-sided games + individual work."
+    },
+    {
+      "id": "t09",
+      "type": "training",
+      "date": "2026-03-28",
+      "time": "10:00",
+      "title": "Squad Integration Session",
+      "venue": "London Colney — Pitch A",
+      "notes": "Reintegrate early international returnees. Light 8v8."
+    },
+    {
+      "id": "r05",
+      "type": "recovery",
+      "date": "2026-03-29",
+      "time": "10:00",
+      "title": "Recovery & Fitness Checks",
+      "venue": "London Colney — Gym",
+      "notes": "Return-from-international assessments. Medical team involved."
+    },
+    {
+      "id": "t10",
+      "type": "training",
+      "date": "2026-03-30",
+      "time": "10:00",
+      "title": "Full Squad Tactical Session",
+      "venue": "London Colney — Pitch A",
+      "notes": "11v11 shape vs simulated Villa press. GW33 preparation."
+    },
+    {
+      "id": "s05",
+      "type": "set",
+      "date": "2026-03-31",
+      "time": "10:30",
+      "title": "Set Piece Prep: Aston Villa",
+      "venue": "London Colney — Pitch B",
+      "notes": "Villa corner & free-kick vulnerabilities. Target Konsa."
+    },
+    {
+      "id": "m05",
+      "type": "match",
+      "date": "2026-04-01",
+      "time": "16:30",
+      "title": "Arsenal vs Aston Villa",
+      "venue": "Emirates Stadium",
+      "notes": "PL GW33. 4-3-3 attack from first whistle. Must win."
+    },
+    {
+      "id": "r06",
+      "type": "recovery",
+      "date": "2026-04-02",
+      "time": "09:30",
+      "title": "Post-Match Recovery",
+      "venue": "London Colney — Gym",
+      "notes": "Pool + hot/cold contrast therapy."
+    },
+    {
+      "id": "t11",
+      "type": "training",
+      "date": "2026-04-03",
+      "time": "10:00",
+      "title": "UCL QF Opponent Analysis",
+      "venue": "London Colney — Pitch A",
+      "notes": "Tactical video session + walkthrough drill based on QF opponent."
+    },
+    {
+      "id": "t12",
+      "type": "training",
+      "date": "2026-04-04",
+      "time": "10:00",
+      "title": "Pressing Intensity Drill",
+      "venue": "London Colney — Pitch A",
+      "notes": "High-intensity gegenpressing shape. UCL QF prep block."
+    },
+    {
+      "id": "s06",
+      "type": "set",
+      "date": "2026-04-05",
+      "time": "10:30",
+      "title": "Set Piece Block: UCL QF",
+      "venue": "London Colney — Pitch B",
+      "notes": "Corner delivery variants. Second-ball winning drills."
+    },
+    {
+      "id": "s07",
+      "type": "set",
+      "date": "2026-04-06",
+      "time": "10:00",
+      "title": "Final Set Pieces: UCL QF 1st Leg",
+      "venue": "London Colney — Pitch A",
+      "notes": "Walkthrough only. Starting XI confirmed. Lock in routines."
+    },
+    {
+      "id": "m06",
+      "type": "match",
+      "date": "2026-04-07",
+      "time": "20:00",
+      "title": "UCL QF — 1st Leg",
+      "venue": "Emirates Stadium",
+      "notes": "UEFA Champions League Quarter-Final 1st Leg. Biggest home night of the season."
+    },
+    {
+      "id": "r07",
+      "type": "recovery",
+      "date": "2026-04-08",
+      "time": "10:00",
+      "title": "Post-Match Recovery",
+      "venue": "London Colney — Gym",
+      "notes": "No ball work. Ice baths mandatory. Monitor all 90-minute starters."
+    },
+    {
+      "id": "t13",
+      "type": "training",
+      "date": "2026-04-09",
+      "time": "10:00",
+      "title": "Debrief + Shape Reset",
+      "venue": "London Colney — Pitch A",
+      "notes": "Video review of QF 1st leg. Adjust shape for away 2nd leg."
+    },
+    {
+      "id": "s08",
+      "type": "set",
+      "date": "2026-04-10",
+      "time": "10:30",
+      "title": "Set Piece Prep: Wolves",
+      "venue": "London Colney — Pitch B",
+      "notes": "Simple, efficient plays. Rotate starters given QF 2nd leg upcoming."
+    },
+    {
+      "id": "m07",
+      "type": "match",
+      "date": "2026-04-11",
+      "time": "15:00",
+      "title": "Wolves vs Arsenal",
+      "venue": "Molineux Stadium",
+      "notes": "PL GW34 — Away. Rotate. 3 points essential."
+    },
+    {
+      "id": "r08",
+      "type": "recovery",
+      "date": "2026-04-12",
+      "time": "10:00",
+      "title": "Post-Match Recovery",
+      "venue": "London Colney — Gym",
+      "notes": "Recovery + reactivation. Some starters rested ahead of UCL QF 2nd leg."
+    },
+    {
+      "id": "t14",
+      "type": "training",
+      "date": "2026-04-13",
+      "time": "10:00",
+      "title": "UCL QF 2nd Leg Preparation",
+      "venue": "London Colney — Pitch A",
+      "notes": "Away tactics. Compact defensive block + transition windows."
+    },
+    {
+      "id": "s09",
+      "type": "set",
+      "date": "2026-04-14",
+      "time": "10:30",
+      "title": "Set Piece Drills: UCL Away",
+      "venue": "London Colney — Pitch A",
+      "notes": "Defending set pieces away. Corner protection and free-kick wall."
+    },
+    {
+      "id": "m08",
+      "type": "match",
+      "date": "2026-04-15",
+      "time": "20:00",
+      "title": "UCL QF — 2nd Leg (Away)",
+      "venue": "Away — TBC",
+      "notes": "UCL Quarter-Final 2nd Leg. Stay compact, clinical on the counter."
+    },
+    {
+      "id": "r09",
+      "type": "recovery",
+      "date": "2026-04-16",
+      "time": "10:00",
+      "title": "Travel Recovery",
+      "venue": "London Colney — Gym",
+      "notes": "Post-travel recovery. Extended rest. Light yoga and stretching only."
+    },
+    {
+      "id": "t15",
+      "type": "training",
+      "date": "2026-04-17",
+      "time": "10:00",
+      "title": "Tactical Reset Post-QF",
+      "venue": "London Colney — Pitch A",
+      "notes": "Focus returns fully to PL. Shape refresh ahead of Man City."
+    },
+    {
+      "id": "t16",
+      "type": "training",
+      "date": "2026-04-18",
+      "time": "10:00",
+      "title": "High Intensity Session",
+      "venue": "London Colney — Pitch A",
+      "notes": "Sharp, quick combinations. Sprint endurance. Maintain peak physical level."
+    },
+    {
+      "id": "s10",
+      "type": "set",
+      "date": "2026-04-18",
+      "time": "14:30",
+      "title": "Set Piece Prep: Man City",
+      "venue": "London Colney — Pitch B",
+      "notes": "Study City defensive set-up. Ederson distribution triggers and press cues."
+    },
+    {
+      "id": "m09",
+      "type": "match",
+      "date": "2026-04-19",
+      "time": "16:30",
+      "title": "Arsenal vs Man City",
+      "venue": "Emirates Stadium",
+      "notes": "PL GW35 — TITLE DECIDER. Win and go 10+ clear. Max intensity from first whistle."
+    },
+    {
+      "id": "r10",
+      "type": "recovery",
+      "date": "2026-04-20",
+      "time": "09:30",
+      "title": "Post-Match Recovery",
+      "venue": "London Colney — Gym",
+      "notes": "Full squad recovery. Professional reset regardless of result."
+    },
+    {
+      "id": "t17",
+      "type": "training",
+      "date": "2026-04-21",
+      "time": "10:00",
+      "title": "UCL SF Opponent Analysis Begins",
+      "venue": "London Colney — Pitch A",
+      "notes": "Start semi-final block. Shape and pressing triggers."
+    },
+    {
+      "id": "t18",
+      "type": "training",
+      "date": "2026-04-22",
+      "time": "10:00",
+      "title": "Finishing & Combinations",
+      "venue": "London Colney — Pitch A",
+      "notes": "Saka, Martinelli, Havertz attacking link-up."
+    },
+    {
+      "id": "t19",
+      "type": "training",
+      "date": "2026-04-23",
+      "time": "10:00",
+      "title": "Pre-Match Session: Brighton",
+      "venue": "London Colney — Pitch A",
+      "notes": "Compact shape vs Brighton high press. Exploit wide channels."
+    },
+    {
+      "id": "s11",
+      "type": "set",
+      "date": "2026-04-24",
+      "time": "10:30",
+      "title": "Set Piece Prep: Brighton",
+      "venue": "London Colney — Pitch B",
+      "notes": "Brighton are vulnerable at near-post corners. Target Verbruggen."
+    },
+    {
+      "id": "m10",
+      "type": "match",
+      "date": "2026-04-25",
+      "time": "15:00",
+      "title": "Brighton vs Arsenal",
+      "venue": "Amex Stadium",
+      "notes": "PL GW36 — Away. Tricky fixture. Stay disciplined."
+    },
+    {
+      "id": "r11",
+      "type": "recovery",
+      "date": "2026-04-26",
+      "time": "10:00",
+      "title": "Post-Match Recovery",
+      "venue": "London Colney — Gym",
+      "notes": "Standard recovery. Extra rest for some players."
+    },
+    {
+      "id": "t20",
+      "type": "training",
+      "date": "2026-04-27",
+      "time": "10:00",
+      "title": "UCL SF 1st Leg Preparation",
+      "venue": "London Colney — Pitch A",
+      "notes": "Full 11v11 SF tactical block. High intensity."
+    },
+    {
+      "id": "s12",
+      "type": "set",
+      "date": "2026-04-28",
+      "time": "10:30",
+      "title": "Set Pieces: UCL SF 1st Leg",
+      "venue": "London Colney — Pitch A",
+      "notes": "Corner delivery variations + penalty area routines."
+    },
+    {
+      "id": "m11",
+      "type": "match",
+      "date": "2026-04-29",
+      "time": "20:00",
+      "title": "UCL SF — 1st Leg",
+      "venue": "Emirates Stadium",
+      "notes": "UEFA Champions League Semi-Final 1st Leg. Biggest Emirates night in years. Leave everything here."
+    },
+    {
+      "id": "r12",
+      "type": "recovery",
+      "date": "2026-04-30",
+      "time": "10:00",
+      "title": "Post-Match Recovery",
+      "venue": "London Colney — Gym",
+      "notes": "Extended protocols. Sleep and rest priority. No ball work."
+    },
+    {
+      "id": "t21",
+      "type": "training",
+      "date": "2026-05-01",
+      "time": "10:00",
+      "title": "UCL SF 2nd Leg Prep — Analysis",
+      "venue": "London Colney — Pitch A",
+      "notes": "Review 1st leg footage. Adapt shape for away 2nd leg."
+    },
+    {
+      "id": "t22",
+      "type": "training",
+      "date": "2026-05-02",
+      "time": "10:00",
+      "title": "Defensive Block Session",
+      "venue": "London Colney — Pitch A",
+      "notes": "Low block + transition drills. Protecting a lead away."
+    },
+    {
+      "id": "s13",
+      "type": "set",
+      "date": "2026-05-02",
+      "time": "14:30",
+      "title": "Set Pieces: UCL SF Away",
+      "venue": "London Colney — Pitch B",
+      "notes": "Defensive set-piece structure. Protect dead-ball situations away."
+    },
+    {
+      "id": "m12",
+      "type": "match",
+      "date": "2026-05-03",
+      "time": "14:00",
+      "title": "Arsenal vs Nottm Forest",
+      "venue": "Emirates Stadium",
+      "notes": "PL GW37 — Could clinch title with a win. Emirates will be electric."
+    },
+    {
+      "id": "r13",
+      "type": "recovery",
+      "date": "2026-05-04",
+      "time": "09:30",
+      "title": "Post-Match Recovery",
+      "venue": "London Colney — Gym",
+      "notes": "Recovery priority. Some players 2 days from UCL SF 2nd leg."
+    },
+    {
+      "id": "t23",
+      "type": "training",
+      "date": "2026-05-05",
+      "time": "10:00",
+      "title": "Final Prep: UCL SF 2nd Leg",
+      "venue": "London Colney — Pitch A",
+      "notes": "Light tactical walkthrough. XI confirmed. Team meeting 18:00."
+    },
+    {
+      "id": "m13",
+      "type": "match",
+      "date": "2026-05-06",
+      "time": "20:00",
+      "title": "UCL SF — 2nd Leg (Away)",
+      "venue": "Away — TBC",
+      "notes": "UCL Semi-Final 2nd Leg. REACH THE FINAL. This is what it all builds to."
+    },
+    {
+      "id": "r14",
+      "type": "recovery",
+      "date": "2026-05-07",
+      "time": "10:00",
+      "title": "Travel & Recovery Day",
+      "venue": "London Colney — Gym",
+      "notes": "Full medical team assessment. Extended rest."
+    },
+    {
+      "id": "t24",
+      "type": "training",
+      "date": "2026-05-08",
+      "time": "10:00",
+      "title": "Squad Reintegration Session",
+      "venue": "London Colney — Pitch A",
+      "notes": "Low-intensity. Reset focus to PL title run-in."
+    },
+    {
+      "id": "t25",
+      "type": "training",
+      "date": "2026-05-09",
+      "time": "10:00",
+      "title": "High Intensity: PL Run-In",
+      "venue": "London Colney — Pitch A",
+      "notes": "Sprint endurance under fatigue. Keep squad sharp."
+    },
+    {
+      "id": "s15",
+      "type": "set",
+      "date": "2026-05-09",
+      "time": "14:30",
+      "title": "Set Piece Prep: Newcastle",
+      "venue": "London Colney — Pitch B",
+      "notes": "Newcastle physical at set plays. Target Pope delivery angles."
+    },
+    {
+      "id": "m14",
+      "type": "match",
+      "date": "2026-05-10",
+      "time": "16:30",
+      "title": "Newcastle vs Arsenal",
+      "venue": "St. James' Park",
+      "notes": "PL GW38 — Potential title-clinching match. St James' Park. Season on the line."
+    },
+    {
+      "id": "r15",
+      "type": "recovery",
+      "date": "2026-05-11",
+      "time": "10:00",
+      "title": "Post-Match Recovery",
+      "venue": "London Colney — Gym",
+      "notes": "Recovery + possible title celebrations. Professional recharge."
+    },
+    {
+      "id": "t26",
+      "type": "training",
+      "date": "2026-05-12",
+      "time": "10:00",
+      "title": "UCL Final Preparation Begins",
+      "venue": "London Colney — Pitch A",
+      "notes": "Start of UCL Final prep block. Opponent analysis."
+    },
+    {
+      "id": "t27",
+      "type": "training",
+      "date": "2026-05-13",
+      "time": "10:00",
+      "title": "Tactical Installation: Final",
+      "venue": "London Colney — Pitch A",
+      "notes": "11v11 shape vs scout model of final opponent. High intensity."
+    },
+    {
+      "id": "t28",
+      "type": "training",
+      "date": "2026-05-14",
+      "time": "10:00",
+      "title": "Combination & Finishing — Final",
+      "venue": "London Colney — Pitch A",
+      "notes": "Attacking patterns for the Final. Saka-Havertz-Martinelli."
+    },
+    {
+      "id": "s16",
+      "type": "set",
+      "date": "2026-05-15",
+      "time": "10:30",
+      "title": "Set Piece Block: UCL Final Prep",
+      "venue": "London Colney — Pitch B",
+      "notes": "Every set piece routine polished to perfection for the Final."
+    },
+    {
+      "id": "t29",
+      "type": "training",
+      "date": "2026-05-16",
+      "time": "10:00",
+      "title": "Pre-Match Session: Everton",
+      "venue": "London Colney — Pitch A",
+      "notes": "Rotate XI. Keep it compact. 3 points before Final focus."
+    },
+    {
+      "id": "m15",
+      "type": "match",
+      "date": "2026-05-17",
+      "time": "16:00",
+      "title": "Arsenal vs Everton",
+      "venue": "Emirates Stadium",
+      "notes": "PL GW39 — Last home match of season. Potential title trophy lift at Emirates."
+    },
+    {
+      "id": "r16",
+      "type": "recovery",
+      "date": "2026-05-18",
+      "time": "10:00",
+      "title": "Post-Match Recovery",
+      "venue": "London Colney — Gym",
+      "notes": "Enjoy the moment. Professional protocols maintained."
+    },
+    {
+      "id": "t30",
+      "type": "training",
+      "date": "2026-05-19",
+      "time": "10:00",
+      "title": "UCL Final — Tactical Rehearsal",
+      "venue": "London Colney — Pitch A",
+      "notes": "Full 11v11 simulation. Simulate Final match conditions and opponent patterns."
+    },
+    {
+      "id": "s17",
+      "type": "set",
+      "date": "2026-05-20",
+      "time": "10:00",
+      "title": "Final Set Piece Session",
+      "venue": "London Colney — Pitch A",
+      "notes": "Last session before departure. Every detail locked in. Nothing left to chance."
+    },
+    {
+      "id": "r17",
+      "type": "recovery",
+      "date": "2026-05-21",
+      "time": "10:00",
+      "title": "Pre-Departure Activation",
+      "venue": "London Colney — Gym",
+      "notes": "Light activation + travel to Munich. Rest is priority."
+    },
+    {
+      "id": "m16",
+      "type": "match",
+      "date": "2026-05-23",
+      "time": "20:00",
+      "title": "UEFA Champions League Final",
+      "venue": "Allianz Arena, Munich",
+      "notes": "THE FINAL. Everything the season has been building toward. COYG."
+    }
+  ]
+}

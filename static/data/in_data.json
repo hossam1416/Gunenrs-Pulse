@@ -1,0 +1,939 @@
+{
+  "coach": {
+    "name": "Mikel Arteta",
+    "role": "Arsenal Head Coach",
+    "license": "UEFA Pro License",
+    "avatar": "/static/images/arteta m.p.jpg",
+    "experience": "6 Yrs",
+    "winRate": "60%",
+    "matches": "368",
+    "trophies": "4",
+    "dob": "44 / 26 Jan 1982",
+    "teams": "1 Club",
+    "languages": "ES · EN · FR · IT",
+    "achievements": "FA Cup · 2× Community Shield · EFL Cup Finalist · UCL Semi-Finals",
+    "linkedin": "https://www.linkedin.com/jobs/",
+    "twitter": "https://x.com/home"
+  },
+  "season": {
+    "year": "2025/26",
+    "position": "1st Place",
+    "gamesPlayed": 37,
+    "w": 25,
+    "d": 7,
+    "l": 5,
+    "gf": 68,
+    "ga": 26,
+    "gd": "+42",
+    "cleanSheets": 16,
+    "winRate": "68%",
+    "points": 82,
+    "maxPoints": 105,
+    "ptsPerGame": "2.09",
+    "biggestWin": { "score": "5 – 0", "opp": "vs Leeds United (GW20)" },
+    "biggestDefeat": { "score": "1 – 2", "opp": "vs Man City " },
+    "homeRecord": "13W · 4D · 1L",
+    "awayRecord": "9W · 3D · 5L",
+
+    "metrics": [
+      {
+        "icon": "sports_soccer",
+        "iconColor": "#ec0024",
+        "label": "Avg Goals Scored/Game",
+        "value": "1.83",
+        "pct": 73,
+        "barClass": "red"
+      },
+      {
+        "icon": "shield",
+        "iconColor": "#3b82f6",
+        "label": "Avg Goals Conceded/Game",
+        "value": "0.63",
+        "pct": 25,
+        "barClass": "blue"
+      },
+      {
+        "icon": "sports_score",
+        "iconColor": "#a855f7",
+        "label": "xG per Game",
+        "value": "1.78",
+        "pct": 71,
+        "barClass": "",
+        "barColor": "#a855f7"
+      },
+      {
+        "icon": "swap_horiz",
+        "iconColor": "#f59e0b",
+        "label": "Avg Possession %",
+        "value": "57%",
+        "pct": 57,
+        "barClass": "",
+        "barColor": "#f59e0b"
+      },
+      {
+        "icon": "moving",
+        "iconColor": "#22c55e",
+        "label": "Pass Accuracy",
+        "value": "88%",
+        "pct": 88,
+        "barClass": "",
+        "barColor": "#22c55e"
+      },
+      {
+        "icon": "electric_bolt",
+        "iconColor": "#ec0024",
+        "label": "Goals from Set Pieces",
+        "value": "17",
+        "pct": 85,
+        "barClass": "red"
+      }
+    ],
+    "kpis": [
+      {
+        "icon": "emoji_events",
+        "iconBg": "rgba(34,197,94,0.1)",
+        "iconColor": "#16a34a",
+        "label": "W / D / L",
+        "value": "22 · 7 · 6",
+        "showBars": true,
+        "sub": null,
+        "highlight": false
+      },
+      {
+        "icon": "sports_soccer",
+        "iconBg": "rgba(149,236,0,0.1)",
+        "iconColor": "var(--primary)",
+        "label": "Goals For / Against",
+        "value": "64 <span style='color:var(--text-2);font-size:12px'>·</span> 22",
+        "sub": { "text": "+42 Goal Diff.", "cls": "green" },
+        "highlight": false
+      },
+      {
+        "icon": "shield",
+        "iconBg": "rgba(59,130,246,0.1)",
+        "iconColor": "#3b82f6",
+        "label": "Clean Sheets",
+        "value": "16",
+        "sub": { "text": "Best in PL", "cls": "blue" },
+        "highlight": false
+      },
+      {
+        "icon": "percent",
+        "iconBg": "rgba(168,85,247,0.1)",
+        "iconColor": "#a855f7",
+        "label": "Win Rate",
+        "value": "62.9%",
+        "sub": { "text": "Title race pace", "cls": "purple" },
+        "highlight": false
+      },
+      {
+        "icon": "military_tech",
+        "iconBg": "rgba(236,0,36,0.15)",
+        "iconColor": "var(--primary)",
+        "label": "Points",
+        "value": "73",
+        "valueColor": "var(--primary)",
+        "sub": { "text": "+6 over Man City*", "cls": "muted" },
+        "highlight": true
+      },
+      {
+        "icon": "avg_pace",
+        "iconBg": "rgba(245,158,11,0.1)",
+        "iconColor": "#f59e0b",
+        "label": "Pts / Game",
+        "value": "2.09",
+        "sub": { "text": "*City have 2 games in hand", "cls": "orange" },
+        "highlight": false
+      }
+    ],
+
+    "breakdown": [
+      {
+        "icon": "check_circle",
+        "cls": "green",
+        "label": "Biggest Win",
+        "val": "5 – 0",
+        "opp": "vs Leeds United (GW20)"
+      },
+      {
+        "icon": "cancel",
+        "cls": "red",
+        "label": "Biggest Defeat",
+        "val": "0 – 2",
+        "opp": "vs Man City (EFL Cup Final)"
+      },
+      {
+        "icon": "home",
+        "cls": "blue",
+        "label": "Home Record",
+        "val": "13W · 4D · 1L",
+        "opp": null
+      },
+      {
+        "icon": "flight_takeoff",
+        "cls": "orange",
+        "label": "Away Record",
+        "val": "9W · 3D · 5L",
+        "opp": null
+      }
+    ]
+  },
+  "lastMatch": {
+    "competition": "PL · May 18, 2026 · GW37",
+    "homeTeam": { "abbr": "ARS", "name": "Arsenal", "color": "#ec0024" },
+    "awayTeam": { "abbr": "BUR", "name": "Burnley", "color": "#000000" },
+    "homeScore": 1,
+    "awayScore": 0,
+    "result": "Win · Home",
+    "scorers": [{ "minute": "36'", "player": "Kai Havertz" }],
+    "conceded": [],
+    "stats": [
+      { "label": "Shots", "home": 20, "away": 8 },
+      { "label": "On Target", "home": 8, "away": 2 },
+      { "label": "Possession", "home": 61, "away": 39, "suffix": "%" },
+      { "label": "Passes", "home": 582, "away": 374 },
+      { "label": "Pass Acc.", "home": 90, "away": 79, "suffix": "%" },
+      { "label": "Fouls", "home": 9, "away": 13 },
+      { "label": "Yellow Cards", "home": 1, "away": 2, "yellow": true }
+    ]
+  },
+  "nextMatch": {
+    "competitionLabel": "PL · May 24, 2026 · GW38",
+    "leftTeam": {
+      "abbr": "CRY",
+      "name": "Crystal Palace",
+      "color": "#1f407a",
+      "form": ["W", "L", "W", "D", "L"]
+    },
+    "rightTeam": {
+      "abbr": "ARS",
+      "name": "Arsenal",
+      "color": "#ec0024",
+      "form": ["W", "W", "W", "W", "W"]
+    },
+    "competition": "Premier League · GW38",
+    "info": [
+      {
+        "icon": "stadium",
+        "label": "Venue",
+        "value": "Selhurst Park, London"
+      },
+      {
+        "icon": "calendar_month",
+        "label": "Date",
+        "value": "Sun, May 24, 2026"
+      },
+      {
+        "icon": "schedule",
+        "label": "Kick-off",
+        "value": "18:00 GMT+3"
+      }
+    ],
+    "uclPhase": {
+      "text": "Season Finale",
+      "color": "#ec0024"
+    },
+    "countdownTarget": "2026-05-24T18:00:00+03:00",
+    "scouting": [
+      {
+        "tag": "key",
+        "tagLabel": "Context",
+        "text": "Final day of the Premier League season; Arsenal currently 1st in the table."
+      },
+      {
+        "tag": "update",
+        "tagLabel": "Status",
+        "text": "Arsenal defeated Burnley 1–0 on May 18 to maintain their lead."
+      }
+    ]
+  },
+  "schedule": [
+    {
+      "title": "Arsenal 3–0 Fulham",
+      "sub": "PL GW35 · Gyökeres brace · 6pt clear",
+      "date": "MAY 02",
+      "time": "17:30",
+      "active": true
+    },
+    {
+      "title": "Arsenal vs Atlético Madrid",
+      "sub": "UCL SF 2nd Leg · Agg 1-1 · Budapest Final awaits",
+      "date": "MAY 05",
+      "time": "20:00",
+      "active": false
+    },
+    {
+      "title": "Arsenal vs Brighton",
+      "sub": "PL GW36 · Emirates Stadium",
+      "date": "MAY 10",
+      "time": "14:00",
+      "active": false
+    },
+    {
+      "title": "Arsenal vs Everton",
+      "sub": "PL GW37 · Penultimate home game",
+      "date": "MAY 17",
+      "time": "15:00",
+      "active": false
+    },
+    {
+      "title": "Nottm Forest vs Arsenal",
+      "sub": "PL GW38 · Final day · City must drop points",
+      "date": "MAY 24",
+      "time": "16:00",
+      "active": false
+    },
+    {
+      "title": "UCL Final (if qualified)",
+      "sub": "Puskás Aréna, Budapest · Europe's biggest night",
+      "date": "MAY 30",
+      "time": "20:00",
+      "active": false
+    }
+  ],
+  "objectives": [
+    {
+      "name": "Premier League",
+      "badge": "1st · +6 pts lead*",
+      "badgeClass": "badge-green",
+      "pct": 78,
+      "barClass": "red",
+      "note": "Target: Win the League · 73pts from 35 games · *City have 2 games in hand · 3 games remain"
+    },
+    {
+      "name": "Champions League",
+      "badge": "SF · Agg 1-1",
+      "badgeClass": "badge-blue",
+      "pct": 80,
+      "barClass": "blue",
+      "note": "Target: Budapest Final (May 30) · 2nd leg at Emirates on May 5 · Biggest night in a generation"
+    },
+    {
+      "name": "EFL Cup",
+      "badge": "Runners-Up",
+      "badgeClass": "badge-blue",
+      "pct": 90,
+      "barClass": "",
+      "barColor": "#94a3b8",
+      "note": "Lost 0-2 to Man City in Wembley Final · Mar 22, 2026 · Grealish × 2"
+    }
+  ],
+  "potw": {
+    "name": "Viktor Gyökeres",
+    "position": "ST · #14",
+    "nationality": "🇸🇪 Sweden",
+    "avatar": "/static/images/viktor.jpg",
+    "score": "94",
+    "matchLabel": "Match Performance — vs Fulham (3–0)",
+    "matchDate": "May 2, 2026",
+    "stats": [
+      { "val": "2", "label": "Goals", "cls": "potw-stat-red" },
+      { "val": "1", "label": "Assists", "cls": "potw-stat-blue" },
+      { "val": "8.7", "label": "Rating", "cls": "potw-stat-green" },
+      { "val": "5", "label": "Shots", "cls": "" },
+      { "val": "4", "label": "On Target", "cls": "" },
+      { "val": "11.2", "label": "Dist km", "cls": "" },
+      { "val": "15", "label": "Season G", "cls": "" }
+    ],
+    "attrs": [
+      {
+        "label": "Shots on Target",
+        "val": "4/5",
+        "pct": 80,
+        "color": "#3b82f6"
+      },
+      { "label": "Duels Won", "val": "7/10", "pct": 70, "color": "#22c55e" },
+      { "label": "Touches in Box", "val": "9", "pct": 85, "color": "#f59e0b" },
+      {
+        "label": "xG Contribution",
+        "val": "1.21",
+        "pct": 80,
+        "color": "#ec0024"
+      }
+    ]
+  },
+  "charts": {
+    "performance": {
+      "labels": ["Aug", "Sep", "Oct", "Nov", "Dec", "Jan", "Feb", "Mar", "Apr"],
+      "wins": [4, 3, 5, 3, 2, 3, 2, 1, 2],
+      "draws": [1, 2, 1, 2, 1, 1, 1, 2, 2],
+      "losses": [0, 0, 0, 1, 2, 1, 1, 1, 3]
+    },
+    "xg": {
+      "labels": ["Aug", "Sep", "Oct", "Nov", "Dec", "Jan", "Feb", "Mar", "Apr"],
+      "goals": [12, 10, 16, 8, 7, 9, 5, 4, 6],
+      "xg": [10.2, 9.0, 13.1, 8.5, 6.9, 8.4, 5.3, 4.1, 5.8]
+    },
+    "control": {
+      "labels": [
+        "vs Leeds",
+        "vs Wolves",
+        "vs Brighton",
+        "vs Newcastle",
+        "vs Fulham"
+      ],
+      "possession": [64, 59, 55, 57, 61],
+      "passAcc": [91, 87, 84, 88, 90]
+    },
+    "cleanSheets": {
+      "labels": ["Aug", "Sep", "Oct", "Nov", "Dec", "Jan", "Feb", "Mar", "Apr"],
+      "played": [5, 5, 6, 6, 5, 5, 3, 4, 3],
+      "cs": [4, 3, 4, 2, 1, 2, 1, 2, 1]
+    },
+    "pressing": {
+      "labels": ["Aug", "Sep", "Oct", "Nov", "Dec", "Jan", "Feb", "Mar", "Apr"],
+      "arsenal": [8.2, 8.5, 7.8, 8.1, 7.5, 8.4, 7.9, 8.0, 7.7],
+      "plAvg": [12.1, 11.8, 12.3, 11.9, 12.0, 11.7, 12.0, 11.8, 12.1]
+    },
+    "homeAway": {
+      "labels": [
+        "Goals Scored",
+        "Goals Conceded",
+        "Clean Sheets",
+        "Win Rate %",
+        "Possession %",
+        "Pass Acc %"
+      ],
+      "home": [42, 8, 12, 72, 60, 90],
+      "away": [22, 14, 4, 53, 54, 86]
+    },
+    "goalTiming": {
+      "labels": [
+        "0–15'",
+        "16–30'",
+        "31–45'",
+        "45+'",
+        "46–60'",
+        "61–75'",
+        "76–90'",
+        "90+'"
+      ],
+      "scored": [6, 8, 9, 4, 9, 15, 7, 6],
+      "conceded": [1, 2, 4, 2, 3, 4, 3, 3],
+      "peakIndex": 5
+    },
+    "compSummary": [
+      {
+        "comp": "PL",
+        "label": "Premier League",
+        "p": 35,
+        "w": 22,
+        "d": 7,
+        "l": 6,
+        "gf": 64,
+        "ga": 22,
+        "note": "1st Place · 73pts"
+      },
+      {
+        "comp": "UCL",
+        "label": "Champions League",
+        "p": 13,
+        "w": 10,
+        "d": 2,
+        "l": 0,
+        "gf": 29,
+        "ga": 7,
+        "note": "SF (Agg 1-1 vs Atlético)"
+      },
+      {
+        "comp": "EFL",
+        "label": "EFL Cup",
+        "p": 6,
+        "w": 5,
+        "d": 0,
+        "l": 1,
+        "gf": 11,
+        "ga": 4,
+        "note": "Runners-Up (Final)"
+      },
+      {
+        "comp": "FAC",
+        "label": "FA Cup",
+        "p": 4,
+        "w": 3,
+        "d": 0,
+        "l": 1,
+        "gf": 11,
+        "ga": 2,
+        "note": "Eliminated QF"
+      }
+    ]
+  },
+  "topScorers": [
+    { "name": "Gyökeres", "goals": 15, "assists": 5 },
+    { "name": "Saka", "goals": 12, "assists": 7 },
+    { "name": "Eze", "goals": 10, "assists": 6 },
+    { "name": "Martinelli", "goals": 7, "assists": 4 },
+    { "name": "Trossard", "goals": 6, "assists": 7 },
+    { "name": "Rice", "goals": 5, "assists": 5 },
+    { "name": "Havertz", "goals": 5, "assists": 3 },
+    { "name": "Merino", "goals": 4, "assists": 4 },
+    { "name": "Ødegaard", "goals": 4, "assists": 6 },
+    { "name": "Gabriel", "goals": 4, "assists": 2 }
+  ],
+  "minutesPlayed": [
+    { "name": "Raya", "mins": 3060 },
+    { "name": "Rice", "mins": 2970 },
+    { "name": "Saliba", "mins": 2970 },
+    { "name": "Gabriel", "mins": 2940 },
+    { "name": "Zubimendi", "mins": 2880 },
+    { "name": "Lewis-Skelly", "mins": 2790 },
+    { "name": "Gyökeres", "mins": 2700 },
+    { "name": "Saka", "mins": 2610 },
+    { "name": "White", "mins": 2520 },
+    { "name": "Trossard", "mins": 2340 },
+    { "name": "Merino", "mins": 2160 },
+    { "name": "Eze", "mins": 2070 },
+    { "name": "Ødegaard", "mins": 1890 }
+  ],
+  "maxMinutes": 3150,
+  "plTable": [
+    {
+      "pos": 1,
+      "badge": "ars",
+      "name": "Arsenal",
+      "p": 35,
+      "w": 22,
+      "d": 7,
+      "l": 6,
+      "gf": 64,
+      "ga": 22,
+      "gd": "+42",
+      "pts": 73,
+      "hl": true,
+      "bar": "#4ade80"
+    },
+    {
+      "pos": 2,
+      "badge": "mci",
+      "name": "Man City",
+      "p": 33,
+      "w": 21,
+      "d": 5,
+      "l": 7,
+      "gf": 72,
+      "ga": 38,
+      "gd": "+34",
+      "pts": 68,
+      "hl": false,
+      "bar": "#4ade80"
+    },
+    {
+      "pos": 3,
+      "badge": "liv",
+      "name": "Liverpool",
+      "p": 35,
+      "w": 19,
+      "d": 9,
+      "l": 7,
+      "gf": 70,
+      "ga": 36,
+      "gd": "+34",
+      "pts": 66,
+      "hl": false,
+      "bar": "#4ade80"
+    },
+    {
+      "pos": 4,
+      "badge": "nfo",
+      "name": "Nottm Forest",
+      "p": 35,
+      "w": 17,
+      "d": 7,
+      "l": 11,
+      "gf": 55,
+      "ga": 42,
+      "gd": "+13",
+      "pts": 58,
+      "hl": false,
+      "bar": "#4ade80"
+    },
+    {
+      "pos": 5,
+      "badge": "che",
+      "name": "Chelsea",
+      "p": 35,
+      "w": 16,
+      "d": 6,
+      "l": 13,
+      "gf": 62,
+      "ga": 50,
+      "gd": "+12",
+      "pts": 54,
+      "hl": false,
+      "bar": "#fb923c"
+    },
+    {
+      "pos": 6,
+      "badge": "avl",
+      "name": "Aston Villa",
+      "p": 35,
+      "w": 15,
+      "d": 7,
+      "l": 13,
+      "gf": 52,
+      "ga": 48,
+      "gd": "+4",
+      "pts": 52,
+      "hl": false,
+      "bar": "#fb923c"
+    },
+    {
+      "pos": 7,
+      "badge": "mnu",
+      "name": "Man Utd",
+      "p": 35,
+      "w": 14,
+      "d": 8,
+      "l": 13,
+      "gf": 50,
+      "ga": 46,
+      "gd": "+4",
+      "pts": 50,
+      "hl": false,
+      "bar": "#fb923c"
+    },
+    {
+      "pos": 8,
+      "badge": "ful",
+      "name": "Fulham",
+      "p": 35,
+      "w": 13,
+      "d": 5,
+      "l": 17,
+      "gf": 43,
+      "ga": 44,
+      "gd": "-1",
+      "pts": 44,
+      "hl": false,
+      "bar": "transparent"
+    },
+    {
+      "pos": 9,
+      "badge": "tot",
+      "name": "Tottenham",
+      "p": 35,
+      "w": 11,
+      "d": 8,
+      "l": 16,
+      "gf": 46,
+      "ga": 58,
+      "gd": "-12",
+      "pts": 41,
+      "hl": false,
+      "bar": "transparent"
+    },
+    {
+      "pos": 18,
+      "badge": "wol",
+      "name": "Wolves",
+      "p": 35,
+      "w": 4,
+      "d": 6,
+      "l": 25,
+      "gf": 26,
+      "ga": 74,
+      "gd": "-48",
+      "pts": 18,
+      "hl": false,
+      "bar": "#f87171",
+      "rel": true
+    }
+  ],
+  "plMatchday": "GW 35 · May 2, 2026",
+  "plSource": "📊 Premier League official · Updated after GW35 (May 2, 2026) · *Man City have 2 games in hand",
+  "uclTable": [
+    {
+      "pos": 1,
+      "badge": "ars",
+      "name": "Arsenal",
+      "p": 8,
+      "w": 8,
+      "d": 0,
+      "l": 0,
+      "gf": 23,
+      "ga": 4,
+      "gd": "+19",
+      "pts": 24,
+      "hl": true,
+      "bar": "#fbbf24"
+    },
+    {
+      "pos": 2,
+      "badge": "bar",
+      "name": "Barcelona",
+      "p": 8,
+      "w": 6,
+      "d": 2,
+      "l": 0,
+      "gf": 21,
+      "ga": 5,
+      "gd": "+16",
+      "pts": 20,
+      "hl": false,
+      "bar": "#60a5fa"
+    },
+    {
+      "pos": 3,
+      "badge": "liv",
+      "name": "Liverpool",
+      "p": 8,
+      "w": 6,
+      "d": 1,
+      "l": 1,
+      "gf": 20,
+      "ga": 6,
+      "gd": "+14",
+      "pts": 19,
+      "hl": false,
+      "bar": "#60a5fa"
+    },
+    {
+      "pos": 4,
+      "badge": "bay",
+      "name": "Bayern Munich",
+      "p": 8,
+      "w": 5,
+      "d": 2,
+      "l": 1,
+      "gf": 18,
+      "ga": 7,
+      "gd": "+11",
+      "pts": 17,
+      "hl": false,
+      "bar": "#60a5fa"
+    },
+    {
+      "pos": 5,
+      "badge": "psg",
+      "name": "Paris SG",
+      "p": 8,
+      "w": 5,
+      "d": 1,
+      "l": 2,
+      "gf": 16,
+      "ga": 8,
+      "gd": "+8",
+      "pts": 16,
+      "hl": false,
+      "bar": "#60a5fa"
+    },
+    {
+      "pos": 6,
+      "badge": "atm",
+      "name": "Atlético Madrid",
+      "p": 8,
+      "w": 5,
+      "d": 1,
+      "l": 2,
+      "gf": 12,
+      "ga": 7,
+      "gd": "+5",
+      "pts": 16,
+      "hl": false,
+      "bar": "#60a5fa"
+    },
+    {
+      "pos": 7,
+      "badge": "b04",
+      "name": "Leverkusen",
+      "p": 8,
+      "w": 5,
+      "d": 0,
+      "l": 3,
+      "gf": 14,
+      "ga": 11,
+      "gd": "+3",
+      "pts": 15,
+      "hl": false,
+      "bar": "#60a5fa"
+    },
+    {
+      "pos": 8,
+      "badge": "int",
+      "name": "Inter Milan",
+      "p": 8,
+      "w": 4,
+      "d": 2,
+      "l": 2,
+      "gf": 13,
+      "ga": 9,
+      "gd": "+4",
+      "pts": 14,
+      "hl": false,
+      "bar": "#60a5fa"
+    }
+  ],
+  "uclMatchday": "League Phase · Final",
+  "uclSource": "📊 UEFA.com · League phase ended Jan 29, 2026 · Arsenal: W8 D0 L0 (Unique record in UCL history)",
+  "uclBanner": "🏆 Arsenal in UCL Semi-Finals for 1st time since 2008/09 · Agg 1-1 vs Atlético · 2nd leg May 5",
+  "uclFixtures": [
+    {
+      "left": "atm",
+      "leftName": "Atlético Madrid",
+      "leg": "1st Leg",
+      "date": "Apr 29 · 19:00 GMT",
+      "right": "ars",
+      "rightName": "Arsenal",
+      "result": "1 – 1"
+    },
+    {
+      "left": "ars",
+      "leftName": "Arsenal",
+      "leg": "2nd Leg",
+      "date": "May 5  · 20:00 GMT",
+      "right": "atm",
+      "rightName": "Atlético Madrid",
+      "result": null
+    }
+  ],
+  "uclKnockout": [
+    {
+      "round": "Round of 16",
+      "opponent": "Bayern Munich",
+      "legs": [
+        {
+          "leg": "1st",
+          "date": "Feb 11, 2026",
+          "venue": "H",
+          "score": "2-0",
+          "result": "W",
+          "scorers": ["Gyökeres 28'", "Saka 69'"]
+        },
+        {
+          "leg": "2nd",
+          "date": "Feb 18, 2026",
+          "venue": "A",
+          "score": "2-1",
+          "result": "W",
+          "scorers": ["Eze 33'", "Gyökeres 77'"]
+        }
+      ],
+      "agg": "4-1",
+      "advance": true
+    },
+    {
+      "round": "Quarter-Finals",
+      "opponent": "Barcelona",
+      "legs": [
+        {
+          "leg": "1st",
+          "date": "Apr 9,  2026",
+          "venue": "H",
+          "score": "3-1",
+          "result": "W",
+          "scorers": ["Saka 12'", "Gyökeres 45+1'", "Ødegaard 71'"]
+        },
+        {
+          "leg": "2nd",
+          "date": "Apr 15, 2026",
+          "venue": "A",
+          "score": "2-2",
+          "result": "D",
+          "scorers": ["Gyökeres 24'", "Rice 87'"]
+        }
+      ],
+      "agg": "5-3",
+      "advance": true
+    },
+    {
+      "round": "Semi-Finals",
+      "opponent": "Atlético Madrid",
+      "legs": [
+        {
+          "leg": "1st",
+          "date": "Apr 29, 2026",
+          "venue": "A",
+          "score": "1-1",
+          "result": "D",
+          "scorers": ["Gyökeres 34'"]
+        },
+        {
+          "leg": "2nd",
+          "date": "May 5,  2026",
+          "venue": "H",
+          "score": null,
+          "result": null,
+          "scorers": []
+        }
+      ],
+      "agg": "1-1",
+      "advance": null
+    }
+  ],
+  "eflSummary": {
+    "result": "Runners-Up",
+    "runToFinal": [
+      {
+        "round": "Round 2",
+        "opponent": "Gillingham",
+        "score": "4-0",
+        "venue": "H",
+        "result": "W"
+      },
+      {
+        "round": "Round 3",
+        "opponent": "Sunderland",
+        "score": "3-1",
+        "venue": "H",
+        "result": "W"
+      },
+      {
+        "round": "Quarter-Final",
+        "opponent": "Manchester United",
+        "score": "2-1",
+        "venue": "H",
+        "result": "W"
+      },
+      {
+        "round": "Semi-Final",
+        "opponent": "Liverpool",
+        "score": "2-0 (agg)",
+        "venue": "H/A",
+        "result": "W"
+      },
+      {
+        "round": "Final",
+        "opponent": "Manchester City",
+        "score": "0-2",
+        "venue": "N (Wembley)",
+        "result": "L",
+        "note": "Mar 22, 2026"
+      }
+    ]
+  },
+  "facSummary": {
+    "result": "Eliminated (QF)",
+    "run": [
+      {
+        "round": "Round 3",
+        "opponent": "Accrington Stanley",
+        "score": "5-0",
+        "venue": "H",
+        "result": "W"
+      },
+      {
+        "round": "Round 4",
+        "opponent": "Exeter City",
+        "score": "3-0",
+        "venue": "A",
+        "result": "W"
+      },
+      {
+        "round": "Round 5",
+        "opponent": "Stoke City",
+        "score": "2-0",
+        "venue": "H",
+        "result": "W"
+      },
+      {
+        "round": "Quarter-Final",
+        "opponent": "Southampton",
+        "score": "1-2",
+        "venue": "H",
+        "result": "L",
+        "note": "Mar 8, 2026 — Eliminated"
+      }
+    ]
+  }
+}

@@ -1,0 +1,575 @@
+{
+  "player": {
+    "name": "Bukayo Saka",
+    "number": 7,
+    "position": "Right Winger",
+    "club": "Arsenal FC",
+    "photo": "/static/images/saka_p.jpg",
+    "fitStatus": "FIT",
+    "readiness": 94,
+    "bio": [
+      {
+        "label": "DOB / Age",
+        "val": "05/09/2001 (24)"
+      },
+      {
+        "label": "Place of birth",
+        "val": "London"
+      },
+      {
+        "label": "Height",
+        "val": "1.78 m"
+      },
+      {
+        "label": "Citizenship",
+        "val": "ENG / NGA"
+      },
+      {
+        "label": "Position",
+        "val": "Attack · Right Winger"
+      },
+      {
+        "label": "Foot",
+        "val": "Left"
+      },
+      {
+        "label": "Player agent",
+        "val": "Elite Project Group"
+      },
+      {
+        "label": "Joined",
+        "val": "01/07/2019"
+      },
+      {
+        "label": "Contract expires",
+        "val": "30/06/2027"
+      },
+      {
+        "label": "Last extension",
+        "val": "23/05/2023"
+      },
+      {
+        "label": "Outfitter",
+        "val": "New Balance"
+      }
+    ]
+  },
+  "season": {
+    "tag": "2025/26",
+    "kpis": [
+      {
+        "icon": "sports_soccer",
+        "iconBg": "rgba(236,0,36,.1)",
+        "iconClr": "var(--primary)",
+        "label": "Goals",
+        "val": "15",
+        "valCls": "clr-primary",
+        "sub": "PL: 11 · UCL: 3 · FA Cup: 1",
+        "subCls": "green",
+        "highlight": false
+      },
+      {
+        "icon": "handshake",
+        "iconBg": "rgba(59,130,246,.1)",
+        "iconClr": "#3b82f6",
+        "label": "Assists",
+        "val": "10",
+        "valCls": "",
+        "sub": "PL: 6 · UCL: 3 · FA Cup: 1",
+        "subCls": "blue",
+        "highlight": false
+      },
+      {
+        "icon": "sports_kabaddi",
+        "iconBg": "rgba(168,85,247,.1)",
+        "iconClr": "#a855f7",
+        "label": "Appearances",
+        "val": "37",
+        "valCls": "",
+        "sub": "All competitions",
+        "subCls": "purple",
+        "highlight": false
+      },
+      {
+        "icon": "grade",
+        "iconBg": "rgba(236,0,36,.15)",
+        "iconClr": "var(--primary)",
+        "label": "Avg Rating",
+        "val": "7.68",
+        "valCls": "clr-primary",
+        "sub": "FotMob · PL",
+        "subCls": "green",
+        "highlight": true
+      },
+      {
+        "icon": "timer",
+        "iconBg": "rgba(245,158,11,.1)",
+        "iconClr": "#f59e0b",
+        "label": "Minutes",
+        "val": "3,012",
+        "valCls": "",
+        "sub": "All competitions",
+        "subCls": "orange",
+        "highlight": false
+      },
+      {
+        "icon": "moving",
+        "iconBg": "rgba(34,197,94,.1)",
+        "iconClr": "#16a34a",
+        "label": "Pass Acc.",
+        "val": "87%",
+        "valCls": "",
+        "sub": "UCL avg",
+        "subCls": "green",
+        "highlight": false
+      },
+      {
+        "icon": "avg_pace",
+        "iconBg": "rgba(59,130,246,.1)",
+        "iconClr": "#3b82f6",
+        "label": "UCL Chances",
+        "val": "3.10",
+        "valCls": "",
+        "sub": "Per game",
+        "subCls": "blue",
+        "highlight": false
+      },
+      {
+        "icon": "electric_bolt",
+        "iconBg": "rgba(245,158,11,.1)",
+        "iconClr": "#f59e0b",
+        "label": "Dribbling",
+        "val": "Strong",
+        "valCls": "",
+        "sub": "WhoScored rated",
+        "subCls": "orange",
+        "highlight": false
+      },
+      {
+        "icon": "flag",
+        "iconBg": "rgba(168,85,247,.1)",
+        "iconClr": "#a855f7",
+        "label": "Fouls Won",
+        "val": "Top",
+        "valCls": "",
+        "sub": "Squad leader",
+        "subCls": "purple",
+        "highlight": false
+      },
+      {
+        "icon": "gps_fixed",
+        "iconBg": "rgba(236,0,36,.1)",
+        "iconClr": "var(--primary)",
+        "label": "UCL Shots",
+        "val": "34",
+        "valCls": "",
+        "sub": "10 UCL apps",
+        "subCls": "muted",
+        "highlight": false
+      },
+      {
+        "icon": "sprint",
+        "iconBg": "rgba(34,197,94,.1)",
+        "iconClr": "#16a34a",
+        "label": "UCL Distance",
+        "val": "52.4km",
+        "valCls": "",
+        "sub": "4.75 km/match",
+        "subCls": "green",
+        "highlight": false
+      },
+      {
+        "icon": "military_tech",
+        "iconBg": "rgba(236,0,36,.15)",
+        "iconClr": "var(--primary)",
+        "label": "G+A Total",
+        "val": "25",
+        "valCls": "clr-primary",
+        "sub": "All competitions",
+        "subCls": "muted",
+        "highlight": false
+      }
+    ]
+  },
+  "trainingToday": {
+    "date": "Thu, Apr 17",
+    "sessionType": "Tactical Reset & Set Pieces",
+    "intensity": "Medium",
+    "intensityPct": 65,
+    "intensityClr": "#f59e0b",
+    "drills": [
+      {
+        "icon": "self_improvement",
+        "iconBg": "rgba(34,197,94,.1)",
+        "iconClr": "#22c55e",
+        "name": "Recovery Run",
+        "meta": "15 min · very light",
+        "badge": "Done",
+        "badgeCls": "badge-green"
+      },
+      {
+        "icon": "strategy",
+        "iconBg": "rgba(236,0,36,.1)",
+        "iconClr": "#ec0024",
+        "name": "Tactical Briefing: Man City",
+        "meta": "30 min · PL GW35 title decider",
+        "badge": "Active",
+        "badgeCls": "badge-red"
+      },
+      {
+        "icon": "sports_soccer",
+        "iconBg": "rgba(59,130,246,.1)",
+        "iconClr": "#3b82f6",
+        "name": "Set Piece Delivery",
+        "meta": "25 min · Calafiori & Gabriel targets",
+        "badge": "Next",
+        "badgeCls": "badge-blue"
+      },
+      {
+        "icon": "directions_run",
+        "iconBg": "rgba(168,85,247,.1)",
+        "iconClr": "#a855f7",
+        "name": "Activation & Stretch",
+        "meta": "10 min · cool-down",
+        "badge": "Later",
+        "badgeCls": "badge-green"
+      }
+    ]
+  },
+  "lastMatch": {
+    "competition": "UCL QF 2nd Leg · Apr 15, 2026",
+    "homeTeam": {
+      "code": "SCP",
+      "name": "Sporting CP",
+      "bg": "#00593E"
+    },
+    "awayTeam": {
+      "code": "ARS",
+      "name": "Arsenal",
+      "bg": "#ec0024"
+    },
+    "score": "1 - 2",
+    "result": "Win · Qualified for SF",
+    "playerStats": {
+      "rating": "8.8",
+      "minutes": 90,
+      "items": [
+        {
+          "icon": "sports_soccer",
+          "iconCls": "ico-primary",
+          "label": "Goals",
+          "val": "1"
+        },
+        {
+          "icon": "handshake",
+          "iconCls": "ico-blue",
+          "label": "Assists",
+          "val": "1"
+        },
+        {
+          "icon": "electric_bolt",
+          "iconCls": "ico-purple",
+          "label": "Dribbles",
+          "val": "4"
+        },
+        {
+          "icon": "gps_fixed",
+          "iconCls": "ico-amber",
+          "label": "Chances Created",
+          "val": "3"
+        },
+        {
+          "icon": "swap_horiz",
+          "iconCls": "ico-green",
+          "label": "Pass Accuracy",
+          "val": "84%"
+        },
+        {
+          "icon": "moving",
+          "iconCls": "ico-blue",
+          "label": "Touches",
+          "val": "68"
+        },
+        {
+          "icon": "sprint",
+          "iconCls": "ico-primary",
+          "label": "Distance (km)",
+          "val": "10.5"
+        },
+        {
+          "icon": "flag",
+          "iconCls": "ico-amber",
+          "label": "Fouls Won",
+          "val": "3"
+        }
+      ]
+    }
+  },
+  "nextMatch": {
+    "competition": "Premier League GW35",
+    "opponent": {
+      "code": "MCI",
+      "name": "Man City",
+      "bg": "#6CABDD",
+      "form": ["W", "W", "D", "W", "W"]
+    },
+    "team": {
+      "code": "ARS",
+      "name": "Arsenal",
+      "bg": "#ec0024",
+      "form": ["W", "W", "W", "W", "W"]
+    },
+    "venue": "Emirates Stadium, London",
+    "date": "Sat, Apr 19, 2026",
+    "kickoff": "16:30 BST · Sky Sports",
+    "kickoffISO": "2026-04-19T15:30:00Z",
+    "playerRole": "Starting XI · RW",
+    "cupForm": "11G · 6A · 15 Apps",
+    "cupLabel": "PL · Title Race",
+    "tactics": [
+      {
+        "tag": "Attack",
+        "tagCls": "threat",
+        "text": "Calafiori's overlapping runs draw defenders inside — isolate Saka 1v1 vs Gvardiol"
+      },
+      {
+        "tag": "Press",
+        "tagCls": "key",
+        "text": "High press on Ederson and Stones — force turnovers in their defensive third"
+      },
+      {
+        "tag": "Set Piece",
+        "tagCls": "injury",
+        "text": "Saka corners to near post — Kepa staying high to sweep Haaland counters"
+      }
+    ]
+  },
+  "weeklySchedule": [
+    {
+      "day": "Tuesday",
+      "date": "Apr 15",
+      "isToday": false,
+      "isMatch": true,
+      "sessions": [
+        {
+          "icon": "emoji_events",
+          "name": "UCL QF 2nd Leg vs Sporting CP",
+          "time": "20:00 KO",
+          "detail": "Away win · 4-2 on Aggregate",
+          "intensity": 5,
+          "active": false,
+          "isMatch": true
+        }
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "date": "Apr 16",
+      "isToday": false,
+      "isMatch": false,
+      "sessions": [
+        {
+          "icon": "self_improvement",
+          "name": "Travel Recovery",
+          "time": "10:00 – 10:45",
+          "detail": "Light yoga, cryotherapy, mobility",
+          "intensity": 1,
+          "active": false
+        }
+      ]
+    },
+    {
+      "day": "Thursday",
+      "date": "Apr 17",
+      "isToday": true,
+      "isMatch": false,
+      "sessions": [
+        {
+          "icon": "self_improvement",
+          "name": "Recovery Run",
+          "time": "09:00 – 09:30",
+          "detail": "Light jog, dynamic stretching",
+          "intensity": 1,
+          "active": true
+        },
+        {
+          "icon": "psychology",
+          "name": "Tactical Briefing",
+          "time": "10:30 – 11:15",
+          "detail": "Man City PL GW35 shape analysis",
+          "intensity": 2,
+          "active": true
+        },
+        {
+          "icon": "sports_soccer",
+          "name": "Set Piece Delivery",
+          "time": "14:00 – 14:45",
+          "detail": "Corner routines, Calafiori & Gabriel targets",
+          "intensity": 3,
+          "active": false
+        }
+      ]
+    },
+    {
+      "day": "Friday",
+      "date": "Apr 18",
+      "isToday": false,
+      "isMatch": false,
+      "sessions": [
+        {
+          "icon": "fitness_center",
+          "name": "Gym Session",
+          "time": "08:30 – 09:15",
+          "detail": "Upper body, reactive strength",
+          "intensity": 3,
+          "active": false
+        },
+        {
+          "icon": "groups",
+          "name": "High Intensity Session",
+          "time": "11:00 – 12:00",
+          "detail": "Sharp, quick combinations. Sprint endurance.",
+          "intensity": 5,
+          "active": false
+        }
+      ]
+    },
+    {
+      "day": "Saturday",
+      "date": "Apr 19",
+      "isToday": false,
+      "isMatch": true,
+      "sessions": [
+        {
+          "icon": "emoji_events",
+          "name": "PL GW35 vs Man City",
+          "time": "16:30 KO",
+          "detail": "Emirates Stadium · Title Decider",
+          "intensity": 5,
+          "active": false,
+          "isMatch": true
+        }
+      ]
+    }
+  ],
+  "objectives": [
+    {
+      "type": "progress",
+      "icon": "sports_soccer",
+      "iconCls": "ico-primary",
+      "label": "Score 15 Goals",
+      "current": 15,
+      "target": 15,
+      "pct": 100,
+      "barBg": "var(--primary)",
+      "sub": "Target reached! New target: 20 Goals"
+    },
+    {
+      "type": "progress",
+      "icon": "handshake",
+      "iconCls": "ico-blue",
+      "label": "Provide 10 Assists",
+      "current": 10,
+      "target": 10,
+      "pct": 100,
+      "barBg": "#3b82f6",
+      "sub": "Target reached! New target: 15 Assists"
+    },
+    {
+      "type": "progress",
+      "icon": "swap_horiz",
+      "iconCls": "ico-purple",
+      "label": "80 Key Passes",
+      "current": 68,
+      "target": 80,
+      "pct": 85,
+      "barBg": "#a855f7",
+      "sub": "12 key passes needed · averaging 2.1 per game"
+    },
+    {
+      "type": "progress",
+      "icon": "military_tech",
+      "iconCls": "ico-amber",
+      "label": "10 MOTM Awards",
+      "current": 6,
+      "target": 10,
+      "pct": 60,
+      "barBg": "#f59e0b",
+      "sub": "4 more MOTM performances needed"
+    },
+    {
+      "type": "rating",
+      "icon": "grade",
+      "iconCls": "ico-green",
+      "label": "Maintain 7.5+ Rating",
+      "current": "7.68",
+      "status": "On Track",
+      "statusCls": "badge-green",
+      "sub": "Current average exceeds 7.5 target — maintain consistency"
+    },
+    {
+      "type": "mission",
+      "icon": "emoji_events",
+      "label": "Win the Premier League",
+      "sub": "Beat Man City to go 10+ clear — finish the job"
+    }
+  ],
+  "coachNotes": [
+    {
+      "author": "Coach Arteta",
+      "initials": "MA",
+      "date": "Apr 16, 2026 · 11:00",
+      "text": "Incredible performance in Lisbon, Bukayo. Your goal sealed the semi-final spot. Now we reset for City — the biggest league game of the season."
+    },
+    {
+      "author": "Coach Arteta",
+      "initials": "MA",
+      "date": "Apr 10, 2026 · 09:30",
+      "text": "Madueke and Calafiori have added a new dimension to our attack and defence. Keep connecting with Noni on the right in training, the competition keeps you both sharp."
+    },
+    {
+      "author": "Coach Arteta",
+      "initials": "MA",
+      "date": "Apr 4, 2026 · 16:00",
+      "text": "FA Cup exit hurts, but we march on. Kepa was solid in goal, but we lacked finishing. The PL and UCL are still ours to fight for. Stay focused."
+    }
+  ],
+  "milestones": [
+    {
+      "icon": "emoji_events",
+      "iconBg": "rgba(236,0,36,.12)",
+      "iconClr": "var(--primary)",
+      "title": "UCL Semi-Final Reached",
+      "sub": "First UCL SF since 2008/09 · vs TBC",
+      "badge": "History",
+      "badgeCls": "badge-red"
+    },
+    {
+      "icon": "sports_soccer",
+      "iconBg": "rgba(59,130,246,.12)",
+      "iconClr": "#3b82f6",
+      "title": "15 League Goals",
+      "sub": "New personal best in a PL season",
+      "badge": "Record",
+      "badgeCls": "badge-blue"
+    },
+    {
+      "icon": "public",
+      "iconBg": "rgba(245,158,11,.12)",
+      "iconClr": "#f59e0b",
+      "title": "25 G+A in a Season",
+      "sub": "Elite winger status · 15G + 10A across all comps",
+      "badge": "Streak",
+      "badgeCls": "badge-orange"
+    },
+    {
+      "icon": "grade",
+      "iconBg": "rgba(34,197,94,.12)",
+      "iconClr": "#16a34a",
+      "title": "300 Arsenal Appearances",
+      "sub": "Reached vs Brighton · Mar 4, 2026",
+      "badge": "Historic",
+      "badgeCls": "badge-green"
+    }
+  ]
+}

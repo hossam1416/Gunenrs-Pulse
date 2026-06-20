@@ -1,0 +1,162 @@
+[
+  {
+    "name": "David Raya",
+    "short": "Raya",
+    "number": "1",
+    "primary": "GK",
+    "posGroup": "GK",
+    "img": "/static/images/raya.jpg"
+  },
+  {
+    "name": "Kepa Arrizabalaga",
+    "short": "Kepa",
+    "number": "13",
+    "primary": "GK",
+    "posGroup": "GK",
+    "img": "/static/images/kepa.jpg"
+  },
+  {
+    "name": "William Saliba",
+    "short": "Saliba",
+    "number": "2",
+    "primary": "CB",
+    "posGroup": "DEF",
+    "img": "/static/images/saliba.jpg"
+  },
+  {
+    "name": "Ben White",
+    "short": "B.White",
+    "number": "4",
+    "primary": "RB",
+    "posGroup": "DEF",
+    "img": "/static/images/ben.jpg"
+  },
+  {
+    "name": "Gabriel Magalhães",
+    "short": "Gabriel",
+    "number": "6",
+    "primary": "CB",
+    "posGroup": "DEF",
+    "img": "/static/images/gabi.jpg"
+  },
+  {
+    "name": "Jurriën Timber",
+    "short": "Timber",
+    "number": "12",
+    "primary": "RB",
+    "posGroup": "DEF",
+    "img": "/static/images/timber.jpg"
+  },
+  {
+    "name": "Riccardo Calafiori",
+    "short": "Calafiori",
+    "number": "33",
+    "primary": "LB",
+    "posGroup": "DEF",
+    "img": "/static/images/Riccardo.jpg"
+  },
+  {
+    "name": "Myles Lewis-Skelly",
+    "short": "M.L-Skelly",
+    "number": "59",
+    "primary": "LB",
+    "posGroup": "DEF",
+    "img": "/static/images/skelly.jpg"
+  },
+  {
+    "name": "Declan Rice",
+    "short": "Rice",
+    "number": "41",
+    "primary": "CDM",
+    "posGroup": "MID",
+    "img": "/static/images/rice.jpg"
+  },
+  {
+    "name": "Martín Zubimendi",
+    "short": "Zubimendi",
+    "number": "16",
+    "primary": "CDM",
+    "posGroup": "MID",
+    "img": "/static/images/zubimendi.jpg"
+  },
+  {
+    "name": "Mikel Merino",
+    "short": "Merino",
+    "number": "23",
+    "primary": "CM",
+    "posGroup": "MID",
+    "img": "/static/images/zezo.jpg"
+  },
+  {
+    "name": "Martin Ødegaard",
+    "short": "Ødegaard",
+    "number": "8",
+    "primary": "CAM",
+    "posGroup": "MID",
+    "img": "/static/images/ode.jpg"
+  },
+  {
+    "name": "Bukayo Saka",
+    "short": "Saka",
+    "number": "7",
+    "primary": "RW",
+    "posGroup": "FWD",
+    "img": "/static/images/saka.jpg"
+  },
+  {
+    "name": "Noni Madueke",
+    "short": "Madueke",
+    "number": "21",
+    "primary": "RW",
+    "posGroup": "FWD",
+    "img": "/static/images/madueke.jpg"
+  },
+  {
+    "name": "Leandro Trossard",
+    "short": "Trossard",
+    "number": "19",
+    "primary": "LW",
+    "posGroup": "FWD",
+    "img": "/static/images/leo.jpg"
+  },
+  {
+    "name": "Gabriel Martinelli",
+    "short": "Martinelli",
+    "number": "11",
+    "primary": "LW",
+    "posGroup": "FWD",
+    "img": "/static/images/mart.jpg"
+  },
+  {
+    "name": "Viktor Gyökeres",
+    "short": "Gyökeres",
+    "number": "14",
+    "primary": "ST",
+    "posGroup": "FWD",
+    "img": "/static/images/viktor.jpg"
+  },
+  {
+    "name": "Ethan Nwaneri",
+    "short": "Nwaneri",
+    "number": "53",
+    "primary": "CAM",
+    "posGroup": "FWD",
+    "img": "/static/images/nwaneri.jpg"
+  },
+  {
+    "name": "Kai Havertz",
+    "short": "Havertz",
+    "number": "29",
+    "primary": "ST",
+    "posGroup": "FWD",
+    "img": "/static/images/kai.jpg"
+  },
+  {
+    "name": "Gabriel Jesus",
+    "short": "G.Jesus",
+    "number": "9",
+    "primary": "ST",
+    "posGroup": "FWD",
+    "img": "/static/images/jesus.jpg"
+  }
+]
