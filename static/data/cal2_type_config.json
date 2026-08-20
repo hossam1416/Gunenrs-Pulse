@@ -1,0 +1,26 @@
+{
+  "match": {
+    "label": "Match",
+    "icon": "sports_soccer",
+    "badge": "MATCH DAY",
+    "short": "MATCH"
+  },
+  "training": {
+    "label": "Training",
+    "icon": "fitness_center",
+    "badge": "TRAINING",
+    "short": "TRAINING"
+  },
+  "set": {
+    "label": "day off",
+    "icon": "strategy",
+    "badge": "DAY OFF",
+    "short": "DAY OFF"
+  },
+  "recovery": {
+    "label": "Recovery",
+    "icon": "self_improvement",
+    "badge": "RECOVERY",
+    "short": "RECOVERY"
+  }
+}

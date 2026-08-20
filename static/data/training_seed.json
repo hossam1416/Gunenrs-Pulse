@@ -1,0 +1,1000 @@
+{
+  "players": [
+    {
+      "id": 1,
+      "name": "David Raya",
+      "short": "D. Raya",
+      "pos": "GK",
+      "posGroup": "GK",
+      "number": 1,
+      "fitness": 100,
+      "medical": "Fit",
+      "minutesPlayed": 2970,
+      "goals": 0,
+      "assists": 0,
+      "trend": "flat",
+      "img": "/static/images/raya.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Kepa Arrizabalaga",
+      "short": "Kepa",
+      "pos": "GK",
+      "posGroup": "GK",
+      "number": 13,
+      "fitness": 95,
+      "medical": "Fit",
+      "minutesPlayed": 720,
+      "goals": 0,
+      "assists": 0,
+      "trend": "flat",
+      "img": "/static/images/kepa.jpg"
+    },
+    {
+      "id": 2,
+      "name": "William Saliba",
+      "short": "W. Saliba",
+      "pos": "CB",
+      "posGroup": "DEF",
+      "number": 2,
+      "fitness": 100,
+      "medical": "Fit",
+      "minutesPlayed": 2880,
+      "goals": 2,
+      "assists": 1,
+      "trend": "up",
+      "img": "/static/images/saliba.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Ben White",
+      "short": "B. White",
+      "pos": "RB",
+      "posGroup": "DEF",
+      "number": 4,
+      "fitness": 92,
+      "medical": "Fit",
+      "minutesPlayed": 2340,
+      "goals": 1,
+      "assists": 3,
+      "trend": "flat",
+      "img": "/static/images/ben.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Gabriel Magalhães",
+      "short": "G. Magalhães",
+      "pos": "CB",
+      "posGroup": "DEF",
+      "number": 6,
+      "fitness": 96,
+      "medical": "Fit",
+      "minutesPlayed": 2790,
+      "goals": 4,
+      "assists": 0,
+      "trend": "up",
+      "img": "/static/images/gabi.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Jurriën Timber",
+      "short": "J. Timber",
+      "pos": "RB",
+      "posGroup": "DEF",
+      "number": 12,
+      "fitness": 95,
+      "medical": "Fit",
+      "minutesPlayed": 2610,
+      "goals": 1,
+      "assists": 4,
+      "trend": "up",
+      "img": "/static/images/timber.jpg"
+    },
+    {
+      "id": 19,
+      "name": "Riccardo Calafiori",
+      "short": "R. Calafiori",
+      "pos": "LB",
+      "posGroup": "DEF",
+      "number": 33,
+      "fitness": 88,
+      "medical": "Fit",
+      "minutesPlayed": 2100,
+      "goals": 3,
+      "assists": 5,
+      "trend": "up",
+      "img": "/static/images/Riccardo.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Myles Lewis-Skelly",
+      "short": "M. Lewis-Skelly",
+      "pos": "LB",
+      "posGroup": "DEF",
+      "number": 59,
+      "fitness": 88,
+      "medical": "Fit",
+      "minutesPlayed": 1530,
+      "goals": 1,
+      "assists": 2,
+      "trend": "up",
+      "img": "/static/images/skelly.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Declan Rice",
+      "short": "D. Rice",
+      "pos": "CDM",
+      "posGroup": "MID",
+      "number": 41,
+      "fitness": 100,
+      "medical": "Fit",
+      "minutesPlayed": 2880,
+      "goals": 7,
+      "assists": 9,
+      "trend": "flat",
+      "img": "/static/images/rice.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Martín Zubimendi",
+      "short": "M. Zubimendi",
+      "pos": "CDM",
+      "posGroup": "MID",
+      "number": 16,
+      "fitness": 100,
+      "medical": "Fit",
+      "minutesPlayed": 2430,
+      "goals": 2,
+      "assists": 3,
+      "trend": "up",
+      "img": "/static/images/zubimendi.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Mikel Merino",
+      "short": "M. Merino",
+      "pos": "CM",
+      "posGroup": "MID",
+      "number": 23,
+      "fitness": 94,
+      "medical": "Fit",
+      "minutesPlayed": 2160,
+      "goals": 5,
+      "assists": 4,
+      "trend": "up",
+      "img": "/static/images/zezo.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Martin Ødegaard",
+      "short": "M. Ødegaard",
+      "pos": "CAM",
+      "posGroup": "MID",
+      "number": 8,
+      "fitness": 62,
+      "medical": "Injured",
+      "minutesPlayed": 810,
+      "goals": 3,
+      "assists": 6,
+      "trend": "down",
+      "img": "/static/images/ode.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Kai Havertz",
+      "short": "K. Havertz",
+      "pos": "CM",
+      "posGroup": "MID",
+      "number": 29,
+      "fitness": 90,
+      "medical": "Fit",
+      "minutesPlayed": 2520,
+      "goals": 10,
+      "assists": 5,
+      "trend": "up",
+      "img": "/static/images/kai.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Bukayo Saka",
+      "short": "B. Saka",
+      "pos": "RW",
+      "posGroup": "FWD",
+      "number": 7,
+      "fitness": 91,
+      "medical": "Fit",
+      "minutesPlayed": 2700,
+      "goals": 14,
+      "assists": 11,
+      "trend": "up",
+      "img": "/static/images/saka.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Noni Madueke",
+      "short": "N. Madueke",
+      "pos": "RW",
+      "posGroup": "FWD",
+      "number": 21,
+      "fitness": 94,
+      "medical": "Fit",
+      "minutesPlayed": 1500,
+      "goals": 6,
+      "assists": 5,
+      "trend": "up",
+      "img": "/static/images/madueke.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Leandro Trossard",
+      "short": "L. Trossard",
+      "pos": "LW",
+      "posGroup": "FWD",
+      "number": 19,
+      "fitness": 87,
+      "medical": "Fit",
+      "minutesPlayed": 2070,
+      "goals": 8,
+      "assists": 6,
+      "trend": "flat",
+      "img": "/static/images/leo.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Gabriel Martinelli",
+      "short": "G. Martinelli",
+      "pos": "LW",
+      "posGroup": "FWD",
+      "number": 11,
+      "fitness": 84,
+      "medical": "Fit",
+      "minutesPlayed": 1890,
+      "goals": 6,
+      "assists": 5,
+      "trend": "up",
+      "img": "/static/images/mart.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Viktor Gyökeres",
+      "short": "V. Gyökeres",
+      "pos": "ST",
+      "posGroup": "FWD",
+      "number": 14,
+      "fitness": 97,
+      "medical": "Fit",
+      "minutesPlayed": 2700,
+      "goals": 22,
+      "assists": 7,
+      "trend": "up",
+      "img": "/static/images/viktor.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Ethan Nwaneri",
+      "short": "E. Nwaneri",
+      "pos": "CAM",
+      "posGroup": "FWD",
+      "number": 53,
+      "fitness": 85,
+      "medical": "Fit",
+      "minutesPlayed": 1440,
+      "goals": 4,
+      "assists": 7,
+      "trend": "up",
+      "img": "/static/images/nwaneri.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Gabriel Jesus",
+      "short": "G. Jesus",
+      "pos": "ST",
+      "posGroup": "FWD",
+      "number": 9,
+      "fitness": 80,
+      "medical": "Fit",
+      "minutesPlayed": 1260,
+      "goals": 5,
+      "assists": 3,
+      "trend": "down",
+      "img": "/static/images/jesus.jpg"
+    }
+  ],
+  "sections": [
+    {
+      "id": "dribbling",
+      "name": "Dribbling",
+      "icon": "directions_run",
+      "description": "Close control, 1v1 moves, change of direction & speed",
+      "drills": [
+        {
+          "id": "d1",
+          "name": "Cone Weave",
+          "shortName": "Cone Weave",
+          "focusLabel": "Control",
+          "intensity": "Med",
+          "duration": 10,
+          "attrs": ["DRI", "BAL"],
+          "video": "https://www.youtube.com/embed/vnngDOCy9C8",
+          "description": "10 cones set 1m apart. Dribble through using both feet alternating. Focus on keeping the ball close. 3 sets × 2 minutes with 30s rest."
+        },
+        {
+          "id": "d2",
+          "name": "1v1 Isolation Box",
+          "shortName": "1v1 Box",
+          "focusLabel": "1v1",
+          "intensity": "Hard",
+          "duration": 15,
+          "attrs": ["DRI", "AGI"],
+          "video": "https://www.youtube.com/embed/fyIdIprnif0",
+          "description": "10×10m grid. Attacker tries to beat defender and reach end line. 5 rounds of 90 seconds each player."
+        },
+        {
+          "id": "d3",
+          "name": "Speed Dribble & Finish",
+          "shortName": "Speed Dribble",
+          "focusLabel": "Speed",
+          "intensity": "Hard",
+          "duration": 12,
+          "attrs": ["SPD", "DRI", "FIN"],
+          "video": "https://www.youtube.com/embed/oHBvVuRpfAA",
+          "description": "30m sprint with ball then finish on goal. 8 reps per player, 45s recovery."
+        },
+        {
+          "id": "d4",
+          "name": "Cruyff Turn Circuit",
+          "shortName": "Cruyff Circuit",
+          "focusLabel": "Technique",
+          "intensity": "Med",
+          "duration": 10,
+          "attrs": ["DRI", "BAL", "AGI"],
+          "video": "https://www.youtube.com/embed/CA7MGFq4i48",
+          "description": "4 cones square 8m sides. Cruyff turn, stepover or scissors at each cone. Coach calls which move."
+        },
+        {
+          "id": "d5",
+          "name": "Pressure Dribble",
+          "shortName": "Pressure Dribble",
+          "focusLabel": "Shielding",
+          "intensity": "Hard",
+          "duration": 12,
+          "attrs": ["DRI", "STR", "BAL"],
+          "video": "https://www.youtube.com/embed/vFSE4MOqrgI",
+          "description": "Defender follows 1m behind. Attacker must shield ball and change direction to escape. 90s rounds."
+        }
+      ]
+    },
+    {
+      "id": "defending",
+      "name": "Defending",
+      "icon": "security",
+      "description": "Pressure, positioning, interceptions & recovery runs",
+      "drills": [
+        {
+          "id": "def1",
+          "name": "Shadow Defending",
+          "shortName": "Shadow Def",
+          "focusLabel": "Body Shape",
+          "intensity": "Med",
+          "duration": 10,
+          "attrs": ["DEF", "POS"],
+          "video": "https://www.youtube.com/embed/hgrStIbFls0",
+          "description": "Defender mirrors attacker's movement without tackling. Focus on body shape and jockeying."
+        },
+        {
+          "id": "def2",
+          "name": "Pressing Trigger Drill",
+          "shortName": "Press Trigger",
+          "focusLabel": "Press",
+          "intensity": "Hard",
+          "duration": 15,
+          "attrs": ["DEF", "STM"],
+          "video": "https://www.youtube.com/embed/ASvUpjsofdI",
+          "description": "Coach signals when ball goes to CB — midfielders press in coordinated waves. 3 triggers defined."
+        },
+        {
+          "id": "def3",
+          "name": "Defensive Line Work",
+          "shortName": "Line Work",
+          "focusLabel": "Shape",
+          "intensity": "Med",
+          "duration": 20,
+          "attrs": ["POS", "DEF", "COM"],
+          "video": "https://www.youtube.com/embed/yfhCETk0YF0",
+          "description": "Back 4 move as a unit across pitch width. Coach calls step/hold/drop."
+        },
+        {
+          "id": "def4",
+          "name": "1v1 Tackle & Recovery",
+          "shortName": "1v1 Defending",
+          "focusLabel": "Defending",
+          "intensity": "Hard",
+          "duration": 12,
+          "attrs": ["DEF", "SPD", "TKL"],
+          "video": "https://www.youtube.com/embed/MKAP5oHz77A",
+          "description": "High-intensity rotating 1v1. Focus on slowing attacker, winning duel, quick recovery."
+        },
+        {
+          "id": "def5",
+          "name": "Zonal Block Shape",
+          "shortName": "Zonal Block",
+          "focusLabel": "Compactness",
+          "intensity": "Med",
+          "duration": 20,
+          "attrs": ["POS", "DEF", "COM"],
+          "video": "https://www.youtube.com/embed/1whM0VIZTN8",
+          "description": "11v11 shape drill. Team holds mid-block and adjusts to ball position."
+        }
+      ]
+    },
+    {
+      "id": "passing",
+      "name": "Passing",
+      "icon": "swap_horiz",
+      "description": "Short & long range, weight, timing & vision",
+      "drills": [
+        {
+          "id": "p1",
+          "name": "One-Touch Triangle",
+          "shortName": "One-Touch Triangle",
+          "focusLabel": "1-Touch Pass",
+          "intensity": "Easy",
+          "duration": 15,
+          "attrs": ["PAS", "VIS", "TEC"],
+          "video": "https://www.youtube.com/embed/XkOpMpYrrZU",
+          "description": "3 players, 8m triangle, one-touch only. Focus on quality of touch. Switch direction every 2 minutes."
+        },
+        {
+          "id": "p2",
+          "name": "Driven Passes",
+          "shortName": "Driven Passes",
+          "focusLabel": "Power & Acc.",
+          "intensity": "Hard",
+          "duration": 10,
+          "attrs": ["PAS", "POW"],
+          "video": "https://www.youtube.com/embed/cRwk4qPAEBg",
+          "description": "Players 40m apart. Drive ball hard and accurate. Focus on non-dominant foot."
+        },
+        {
+          "id": "p3",
+          "name": "Triangle Rondo",
+          "shortName": "Triangle Rondo",
+          "focusLabel": "Quick Touch",
+          "intensity": "Easy",
+          "duration": 15,
+          "attrs": ["AGI", "REA", "PAS"],
+          "video": "https://www.youtube.com/embed/4vftxYUhoUY",
+          "description": "5 keep possession against 2 in a 12m circle. Max 2 touches."
+        },
+        {
+          "id": "p4",
+          "name": "Switching Play",
+          "shortName": "Switching Play",
+          "focusLabel": "Long Pass",
+          "intensity": "Med",
+          "duration": 15,
+          "attrs": ["L.PAS", "VIS"],
+          "video": "https://www.youtube.com/embed/5lYvdlhTWrA",
+          "description": "Player switches ball across 40m to opposite winger. Focus on weight and accuracy."
+        },
+        {
+          "id": "p5",
+          "name": "Combination Play 3-2-1",
+          "shortName": "Combo Play",
+          "focusLabel": "Third Man Run",
+          "intensity": "Med",
+          "duration": 15,
+          "attrs": ["PAS", "VIS", "DEC"],
+          "video": "https://www.youtube.com/embed/zqmXyCYFF3E",
+          "description": "3 build from back, play into midfielder, third man runner bursts forward."
+        }
+      ]
+    },
+    {
+      "id": "shooting",
+      "name": "Shooting",
+      "icon": "sports_soccer",
+      "description": "Technique, placement, first-time finish & power shots",
+      "drills": [
+        {
+          "id": "s1",
+          "name": "Placed Shot Accuracy",
+          "shortName": "Placed Shot",
+          "focusLabel": "Placement",
+          "intensity": "Med",
+          "duration": 10,
+          "attrs": ["FIN", "TEC"],
+          "video": "https://www.youtube.com/embed/oOhohKfAKBE",
+          "description": "5 balls from 20m, aim at 4 corners. Both feet. Focus on plant foot, body over ball."
+        },
+        {
+          "id": "s2",
+          "name": "First-Time Volley",
+          "shortName": "First-Time Volley",
+          "focusLabel": "Volleys",
+          "intensity": "Hard",
+          "duration": 15,
+          "attrs": ["FIN", "TEC", "BAL"],
+          "video": "https://www.youtube.com/embed/y0CBWGghI64",
+          "description": "Server crosses from wide at pace. Striker volleys first time. 10 reps each side."
+        },
+        {
+          "id": "s3",
+          "name": "1v1 vs Goalkeeper",
+          "shortName": "1v1 vs GK",
+          "focusLabel": "Composure",
+          "intensity": "Hard",
+          "duration": 15,
+          "attrs": ["FIN", "COM", "DEC"],
+          "video": "https://www.youtube.com/embed/5OWWGerdpss",
+          "description": "Player starts 25m out, runs at goal, must beat GK one-on-one. 8 reps."
+        },
+        {
+          "id": "s4",
+          "name": "Shooting Under Pressure",
+          "shortName": "Shoot Pressure",
+          "focusLabel": "Quick Release",
+          "intensity": "Hard",
+          "duration": 12,
+          "attrs": ["FIN", "POW", "DEC"],
+          "video": "https://www.youtube.com/embed/b6DRlIapEi4",
+          "description": "Receive with back to goal, turn, defender closes. Must shoot within 2 touches."
+        },
+        {
+          "id": "s5",
+          "name": "Rebound Finishing",
+          "shortName": "Rebound Finish",
+          "focusLabel": "Positioning",
+          "intensity": "Med",
+          "duration": 10,
+          "attrs": ["FIN", "POS", "REA"],
+          "video": "https://www.youtube.com/embed/nDiAoF3uEQI",
+          "description": "First striker shoots, GK parries. Second striker follows up for rebound."
+        }
+      ]
+    },
+    {
+      "id": "setpiece",
+      "name": "Set Pieces",
+      "icon": "flag",
+      "description": "Corners, free kicks, penalties, throw-ins & defensive shape",
+      "drills": [
+        {
+          "id": "sp1",
+          "name": "Corner — Near Post Flick",
+          "shortName": "Corner Flick",
+          "focusLabel": "Aerial",
+          "intensity": "Med",
+          "duration": 15,
+          "attrs": ["HEA", "POS", "TIM"],
+          "video": "https://www.youtube.com/embed/8Vvk6okTvDE",
+          "description": "3 designated attackers. Near post flick-on to second striker at back post. 8 reps."
+        },
+        {
+          "id": "sp2",
+          "name": "Direct Free Kick Practice",
+          "shortName": "Free Kick",
+          "focusLabel": "Dead Ball",
+          "intensity": "Med",
+          "duration": 15,
+          "attrs": ["FKA", "TEC", "POW"],
+          "video": "https://www.youtube.com/embed/uVJ0oavP77E",
+          "description": "3 takers, 25m out, over wall and curling shots. 10 reps each."
+        },
+        {
+          "id": "sp3",
+          "name": "Penalty Shootout Sim",
+          "shortName": "Penalty Sim",
+          "focusLabel": "Composure",
+          "intensity": "Med",
+          "duration": 15,
+          "attrs": ["FIN", "COM", "PEN"],
+          "video": "https://www.youtube.com/embed/od-dwl1QCbQ",
+          "description": "All outfield players take 2 penalties each. Track scores."
+        },
+        {
+          "id": "sp4",
+          "name": "Long Throw-In Attack",
+          "shortName": "Long Throw",
+          "focusLabel": "Aerial Duels",
+          "intensity": "Hard",
+          "duration": 10,
+          "attrs": ["THR", "HEA", "POS"],
+          "video": "https://www.youtube.com/embed/GDYWTRkDeVA",
+          "description": "Long-throw player from touchline, 2 attackers make runs. 10 reps per side."
+        },
+        {
+          "id": "sp5",
+          "name": "Defending Corners — Zonal",
+          "shortName": "Def Corners",
+          "focusLabel": "Zonal Mark",
+          "intensity": "Med",
+          "duration": 15,
+          "attrs": ["DEF", "HEA", "COM"],
+          "video": "https://www.youtube.com/embed/xBBTQJYQj5Y",
+          "description": "Defensive unit holds zones, clear every delivery. 10 reps each type."
+        }
+      ]
+    },
+    {
+      "id": "physical",
+      "name": "Physical",
+      "icon": "fitness_center",
+      "description": "Speed, agility, endurance & explosive power",
+      "drills": [
+        {
+          "id": "ph1",
+          "name": "Sprint Intervals",
+          "shortName": "Sprint Intervals",
+          "focusLabel": "Explosive",
+          "intensity": "Hard",
+          "duration": 20,
+          "attrs": ["SPD", "STM", "ACC"],
+          "video": "https://www.youtube.com/embed/nD5rQ-UYBh0",
+          "description": "10 × 40m sprints. 40 seconds rest between each. Track split times."
+        },
+        {
+          "id": "ph2",
+          "name": "SAQ Ladder & Hurdles",
+          "shortName": "SAQ Ladder",
+          "focusLabel": "Agility",
+          "intensity": "Hard",
+          "duration": 15,
+          "attrs": ["AGI", "SPD", "BAL"],
+          "video": "https://www.youtube.com/embed/QAf_vk03AF8",
+          "description": "4 agility ladder patterns then 6 hurdles. 3 full sets."
+        },
+        {
+          "id": "ph3",
+          "name": "HIIT Circuit",
+          "shortName": "HIIT Circuit",
+          "focusLabel": "Conditioning",
+          "intensity": "Hard",
+          "duration": 25,
+          "attrs": ["STM", "POW", "SPD"],
+          "video": "https://www.youtube.com/embed/R2m5fpxZI8E",
+          "description": "4 stations: box jumps, burpees, lateral bounds, tuck jumps. 40s on, 20s off."
+        },
+        {
+          "id": "ph4",
+          "name": "Aerobic Endurance Run",
+          "shortName": "Endurance Run",
+          "focusLabel": "Stamina",
+          "intensity": "Med",
+          "duration": 20,
+          "attrs": ["STM", "REC"],
+          "video": "https://www.youtube.com/embed/1lvhOgKker4",
+          "description": "20-minute continuous run at 70% max heart rate."
+        },
+        {
+          "id": "ph5",
+          "name": "Core & Strength Circuit",
+          "shortName": "Core Circuit",
+          "focusLabel": "Strength",
+          "intensity": "Med",
+          "duration": 20,
+          "attrs": ["STR", "BAL", "POW"],
+          "video": "https://www.youtube.com/embed/Jc75w4ksvLg",
+          "description": "Plank, side plank, Bulgarian split squat, Nordic curl circuit."
+        }
+      ]
+    },
+    {
+      "id": "tactical",
+      "name": "Tactical",
+      "icon": "grid_on",
+      "description": "Shape, transitions, high press & positional play",
+      "drills": [
+        {
+          "id": "t1",
+          "name": "Positional Play 9v9",
+          "shortName": "Positional 9v9",
+          "focusLabel": "Shape",
+          "intensity": "Med",
+          "duration": 20,
+          "attrs": ["POS", "DEC", "VIS"],
+          "video": "https://www.youtube.com/embed/zybYUx7ixRI",
+          "description": "Two teams in 60×40m. Coach freezes to correct positioning."
+        },
+        {
+          "id": "t2",
+          "name": "Counter-Attack Transitions",
+          "shortName": "Counter Attack",
+          "focusLabel": "Transitions",
+          "intensity": "Hard",
+          "duration": 15,
+          "attrs": ["SPD", "DEC", "PAS"],
+          "video": "https://www.youtube.com/embed/wB9gx4iQ85Y",
+          "description": "Win ball in own half. Must attack and finish within 8 seconds. 10 reps."
+        },
+        {
+          "id": "t3",
+          "name": "High Press Pattern Work",
+          "shortName": "High Press",
+          "focusLabel": "Pressing",
+          "intensity": "Hard",
+          "duration": 20,
+          "attrs": ["STM", "DEF", "COM"],
+          "video": "https://www.youtube.com/embed/-9ma9eK1Bao",
+          "description": "Full team presses as a unit on coach's signal. 15 minutes team drill."
+        },
+        {
+          "id": "t4",
+          "name": "Defensive Block + Compact",
+          "shortName": "Def Block",
+          "focusLabel": "Low Block",
+          "intensity": "Med",
+          "duration": 15,
+          "attrs": ["POS", "DEF", "COM"],
+          "video": "https://www.youtube.com/embed/1whM0VIZTN8",
+          "description": "Team holds mid-to-low block, shifts horizontally. 15 minutes."
+        },
+        {
+          "id": "t5",
+          "name": "Build-Up Under Pressure",
+          "shortName": "Build-Up Press",
+          "focusLabel": "Possession",
+          "intensity": "Hard",
+          "duration": 15,
+          "attrs": ["PAS", "DEC", "COM"],
+          "video": "https://www.youtube.com/embed/a6mRlIpt0l8",
+          "description": "Back 4 + GK build out under press from 3 forwards. 10 successful reps."
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "name": "Heading",
+      "icon": "person",
+      "description": "Attacking & defensive headers, aerial duels & timing",
+      "drills": [
+        {
+          "id": "h1",
+          "name": "Attacking Header — Diving",
+          "shortName": "Diving Header",
+          "focusLabel": "Aerial",
+          "intensity": "Med",
+          "duration": 15,
+          "attrs": ["HEA", "TIM", "POS"],
+          "video": "https://www.youtube.com/embed/Bnn3sWy-QPY",
+          "description": "Cross from wide at pace. Striker times run to dive and head into net."
+        },
+        {
+          "id": "h2",
+          "name": "Defensive Clearance Header",
+          "shortName": "Def Clearance",
+          "focusLabel": "Clearance",
+          "intensity": "Med",
+          "duration": 12,
+          "attrs": ["HEA", "STR", "DEF"],
+          "video": "https://www.youtube.com/embed/b6QOjz43zDQ",
+          "description": "Server delivers high ball into box. CB wins aerial and heads clear past halfway."
+        },
+        {
+          "id": "h3",
+          "name": "Aerial Duel 1v1",
+          "shortName": "Aerial 1v1",
+          "focusLabel": "Aerial Battle",
+          "intensity": "Hard",
+          "duration": 15,
+          "attrs": ["HEA", "STR", "JUM"],
+          "video": "https://www.youtube.com/embed/Fyp4M70M6Hw",
+          "description": "Defender vs attacker in 6m box. Box out, time jump, attack the ball."
+        },
+        {
+          "id": "h4",
+          "name": "Flick-On Header",
+          "shortName": "Flick-On Header",
+          "focusLabel": "Redirection",
+          "intensity": "Med",
+          "duration": 12,
+          "attrs": ["HEA", "TIM", "TEC"],
+          "video": "https://www.youtube.com/embed/a3onuxZf-Og",
+          "description": "Near-post runner flicks header across goal for second striker."
+        },
+        {
+          "id": "h5",
+          "name": "GK Punch vs Cross",
+          "shortName": "GK Punch Cross",
+          "focusLabel": "Claiming",
+          "intensity": "Hard",
+          "duration": 12,
+          "attrs": ["CLM", "POS", "COM"],
+          "video": "https://www.youtube.com/embed/v2fqPOZN0BM",
+          "description": "Wingers deliver varied crosses. GK claims or punches under pressure from 2 attackers."
+        }
+      ]
+    },
+    {
+      "id": "goalkeeping",
+      "name": "Goalkeeping",
+      "icon": "back_hand",
+      "description": "Shot-stopping, distribution, positioning & cross claiming",
+      "drills": [
+        {
+          "id": "gk1",
+          "name": "Reaction Save Drill",
+          "shortName": "Reaction Saves",
+          "focusLabel": "Reflexes",
+          "intensity": "Hard",
+          "duration": 15,
+          "attrs": ["REF", "AGI", "DIV"],
+          "video": "https://www.youtube.com/embed/Cpyz87uujrY",
+          "description": "Coach shoots from 8m rapidly from different angles. 3 sets of 10 shots."
+        },
+        {
+          "id": "gk2",
+          "name": "Distribution — Throw & Kick",
+          "shortName": "Distribution",
+          "focusLabel": "Distribution",
+          "intensity": "Med",
+          "duration": 15,
+          "attrs": ["DIS", "THR", "KIC"],
+          "video": "https://www.youtube.com/embed/oki7wlLSSJo",
+          "description": "GK distributes using all methods: throw, roll, goal kick, long kick."
+        },
+        {
+          "id": "gk3",
+          "name": "Cross Claiming",
+          "shortName": "Cross Claiming",
+          "focusLabel": "Commanding",
+          "intensity": "Hard",
+          "duration": 15,
+          "attrs": ["CLM", "POS", "COM"],
+          "video": "https://www.youtube.com/embed/iSc2nLvyRE8",
+          "description": "Wingers deliver crosses. GK claims or punches under pressure. 12 reps each side."
+        },
+        {
+          "id": "gk4",
+          "name": "1v1 Positioning",
+          "shortName": "1v1 Position",
+          "focusLabel": "Angle Play",
+          "intensity": "Hard",
+          "duration": 15,
+          "attrs": ["POS", "REF", "COM"],
+          "video": "https://www.youtube.com/embed/ajsh6NNMN0Q",
+          "description": "Attacker breaks through. GK narrows angle correctly and forces a save."
+        },
+        {
+          "id": "gk5",
+          "name": "Footwork Under Press",
+          "shortName": "Footwork Press",
+          "focusLabel": "With Feet",
+          "intensity": "Hard",
+          "duration": 10,
+          "attrs": ["KIC", "DEC", "POS"],
+          "video": "https://www.youtube.com/embed/uPqlDyS4Pmo",
+          "description": "Opponent presses GK after back pass. GK plays out under pressure."
+        }
+      ]
+    },
+    {
+      "id": "crossing",
+      "name": "Crossing",
+      "icon": "redo",
+      "description": "Wide play delivery, cutbacks, overlaps & early balls",
+      "drills": [
+        {
+          "id": "cr1",
+          "name": "Driven Low Cross",
+          "shortName": "Driven Low Cross",
+          "focusLabel": "Delivery",
+          "intensity": "Hard",
+          "duration": 12,
+          "attrs": ["CRO", "TEC", "SPD"],
+          "video": "https://www.youtube.com/embed/Y1qq-VsWqmU",
+          "description": "Winger drives ball hard across the floor to striker at far post."
+        },
+        {
+          "id": "cr2",
+          "name": "Cutback Drill",
+          "shortName": "Cutback Drill",
+          "focusLabel": "Cutback",
+          "intensity": "Med",
+          "duration": 12,
+          "attrs": ["CRO", "VIS", "TEC"],
+          "video": "https://www.youtube.com/embed/nvajn6BYJog",
+          "description": "Winger to byline, pulls back to edge of box for arriving midfielder."
+        },
+        {
+          "id": "cr3",
+          "name": "Overlap Run + Cross",
+          "shortName": "Overlap Cross",
+          "focusLabel": "Combination",
+          "intensity": "Hard",
+          "duration": 15,
+          "attrs": ["CRO", "SPD", "COM"],
+          "video": "https://www.youtube.com/embed/b3f8chCuUsQ",
+          "description": "Full-back overlaps outside winger, receives and delivers early cross."
+        },
+        {
+          "id": "cr4",
+          "name": "Early Ball Delivery",
+          "shortName": "Early Ball",
+          "focusLabel": "Timing",
+          "intensity": "Med",
+          "duration": 12,
+          "attrs": ["CRO", "TEC", "VIS"],
+          "video": "",
+          "description": "Winger crosses before reaching byline. Alternate targets: near/far/penalty spot."
+        },
+        {
+          "id": "cr5",
+          "name": "Crossing vs Defender",
+          "shortName": "Cross vs Def",
+          "focusLabel": "Beating Press",
+          "intensity": "Hard",
+          "duration": 15,
+          "attrs": ["CRO", "DRI", "SPD"],
+          "video": "https://www.youtube.com/embed/mh-ZyNNZN0c",
+          "description": "Winger 1v1 vs full-back. Must beat defender before crossing."
+        }
+      ]
+    },
+    {
+      "id": "ssg",
+      "name": "Small-Sided",
+      "icon": "grid_view",
+      "description": "3v3 to 7v7 game scenarios focused on specific outcomes",
+      "drills": [
+        {
+          "id": "sg1",
+          "name": "3v3 No Goalkeeper",
+          "shortName": "3v3 No GK",
+          "focusLabel": "Decisions",
+          "intensity": "Hard",
+          "duration": 20,
+          "attrs": ["DEC", "DRI"],
+          "video": "https://www.youtube.com/embed/034PbEDrKns",
+          "description": "Small goals, free play. 4 × 4 minute games."
+        },
+        {
+          "id": "sg2",
+          "name": "5v5 Possession Game",
+          "shortName": "5v5 Possession",
+          "focusLabel": "Keep Ball",
+          "intensity": "Med",
+          "duration": 15,
+          "attrs": ["PAS", "POS", "DEC"],
+          "video": "",
+          "description": "Team scores a point for every 5 consecutive passes."
+        },
+        {
+          "id": "sg3",
+          "name": "4v4 + 2 Jokers",
+          "shortName": "4v4 Jokers",
+          "focusLabel": "Overload",
+          "intensity": "Med",
+          "duration": 15,
+          "attrs": ["PAS", "VIS", "DEC"],
+          "video": "https://www.youtube.com/embed/dptQjzGR91I",
+          "description": "2 neutral players always support team in possession."
+        },
+        {
+          "id": "sg4",
+          "name": "Transition Game 4v4+4",
+          "shortName": "4v4+4 Transition",
+          "focusLabel": "Transitions",
+          "intensity": "Hard",
+          "duration": 20,
+          "attrs": ["SPD", "DEC", "TRA"],
+          "video": "https://www.youtube.com/embed/x9hk4oA_SJ8",
+          "description": "Defending team wins ball, instantly attacks and switches roles."
+        },
+        {
+          "id": "sg5",
+          "name": "Phase of Play 7v6",
+          "shortName": "Phase of Play",
+          "focusLabel": "Game Scenario",
+          "intensity": "Hard",
+          "duration": 25,
+          "attrs": ["TEC", "POS", "DEC"],
+          "video": "https://www.youtube.com/embed/x_H_Q-tJVS8",
+          "description": "7 attackers vs 6 defenders in final third."
+        }
+      ]
+    }
+  ],
+  "published_sessions": []
+}

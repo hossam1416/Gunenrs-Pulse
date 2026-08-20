@@ -1,0 +1,236 @@
+{% load static %}
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gunners Pulse – Coach Command Center</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@400,0&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+  </head>
+  <body>
+    <div class="app-wrapper">
+      <!-- ═══ SIDEBAR ═══ -->
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-logo">
+          <img
+            class="siteLogo"
+            id="siteLogo"
+            src="{% static 'images/white_gun.jpg' %}"
+            alt="Gunners Pulse"
+            onerror="this.style.display = 'none'"
+          />
+        </div>
+        <nav class="sidebar-nav">
+          <a class="nav-link-item active" href="{% url 'home' %}">
+  <span class="material-symbols-outlined">home</span><span>Home</span>
+</a>
+          <a class="nav-link-item" href="{% url 'basic' %}">
+            <span class="material-symbols-outlined">monitoring</span
+            ><span>Player Performance</span>
+          </a>
+          <a class="nav-link-item" href="{% url 'compare_players' %}">
+            <span class="material-symbols-outlined">compare_arrows</span
+            ><span>Compare Player</span>
+          </a>
+          <a class="nav-link-item" href="{% url 'tactics_page' %}">
+            <span class="material-symbols-outlined">strategy</span
+            ><span>Tactics</span>
+          </a>
+          <a class="nav-link-item" href="{% url 'training' %}">
+            <span class="material-symbols-outlined">fitness_center</span
+            ><span>Training</span>
+          </a>
+          <a class="nav-link-item" href="{% url 'medical_center' %}">
+            <span class="material-symbols-outlined">medical_services</span
+            ><span>Medical Center</span>
+          </a>
+          <a class="nav-link-item" href="{% url 'calendar_month' %}">
+            <span class="material-symbols-outlined">calendar_month</span
+            ><span>Calendar</span>
+          </a>
+          <a class="nav-link-item" href="{% url 'admin:index' %}">
+            <span class="material-symbols-outlined">settings</span
+            ><span>Setting</span>
+          </a>
+        </nav>
+        <div class="sidebar-footer">
+          <a class="nav-link-item" href="{% url 'logout' %}">
+  <span class="material-symbols-outlined">logout</span>
+  <span>Logout</span>
+</a>
+        </div>
+      </aside>
+
+      <!-- Mobile overlay -->
+      <div class="mob-overlay" id="mobOverlay"></div>
+
+      <!-- ═══ MAIN ═══ -->
+      <main class="main-content">
+        <!-- HEADER -->
+        <header class="top-header">
+          <button
+            class="hamburger-btn"
+            id="hamburgerBtn"
+            aria-label="Open menu"
+          >
+            <span class="material-symbols-outlined">menu</span>
+          </button>
+          <div class="header-title">
+            <h1>Coach Command Center</h1>
+            <p>Gunners Pulse Performance Interface</p>
+          </div>
+          <div class="header-right">
+            <button class="theme-toggle-btn" id="themeToggle">
+              <span class="material-symbols-outlined" id="themeIcon"
+                >dark_mode</span
+              >
+            </button>
+            <button class="notif-btn">
+              <span class="material-symbols-outlined">notifications</span>
+              <span class="notif-dot"></span>
+            </button>
+            <div class="user-profile">
+              <div class="user-text">
+                <div class="user-name">Mikel Arteta</div>
+                <div class="user-role">Head Coach</div>
+              </div>
+              <img class="avatar" src="{% static 'images/arteta h.p.jpg' %}" alt="Coach" />
+            </div>
+          </div>
+        </header>
+        <!-- PAGE CONTENT — all sections rendered by JS -->
+        <div class="page-content">
+          <!-- ROW 1: Coach + Season Perf -->
+          <div class="row g-3 mb-3">
+            <div class="col-12 col-lg-3">
+              <div class="card-gp h-100">
+                <div class="p-3" id="sec-coach"></div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-9">
+              <div class="card-gp h-100">
+                <div class="p-3" id="sec-season"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ROW 2: Last Match + Next Match -->
+          <div class="row g-3 mb-3">
+            <div class="col-12 col-lg-6">
+              <div class="card-gp h-100">
+                <div class="p-3" id="sec-last-match"></div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="card-gp next-match-card h-100">
+                <div class="glow-blob"></div>
+                <div class="p-3" id="sec-next-match"></div>
+              </div>
+            </div>
+          </div>
+          <!-- ROW 3: Weekly Schedule + Season Objectives -->
+          <div class="row g-3 mb-3">
+            <div class="col-12 col-lg-6">
+              <div class="card-gp h-100">
+                <div class="p-3" id="sec-schedule"></div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="card-gp h-100">
+                <div class="p-3" id="sec-objectives"></div>
+              </div>
+            </div>
+          </div>
+          <!-- ROW 4: Charts row 1 -->
+          <div class="row g-3 mb-3">
+            <div class="col-12 col-lg-4">
+              <div class="card-gp h-100">
+                <div class="p-3" id="sec-chart-perf"></div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="card-gp h-100">
+                <div class="p-3" id="sec-chart-xg"></div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="card-gp h-100">
+                <div class="p-3" id="sec-chart-control"></div>
+              </div>
+            </div>
+          </div>
+          <!-- ROW 5: Charts row 2 -->
+          <div class="row g-3 mb-3">
+            <div class="col-12 col-lg-4">
+              <div class="card-gp h-100">
+                <div class="p-3" id="sec-chart-cs"></div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="card-gp h-100">
+                <div class="p-3" id="sec-chart-press"></div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="card-gp h-100">
+                <div class="p-3" id="sec-chart-ha"></div>
+              </div>
+            </div>
+          </div>
+          <!-- ROW 6: Goal Timing -->
+          <div class="row g-3 mb-3">
+            <div class="col-12">
+              <div class="card-gp">
+                <div class="p-3" id="sec-goal-timing"></div>
+              </div>
+            </div>
+          </div>
+          <!-- ROW 7: Player of the Week -->
+          <div class="row g-3 mb-3">
+            <div class="col-12" id="sec-potw"></div>
+          </div>
+          <!-- ROW 8: Top Scorers + Minutes -->
+          <div class="row g-3 mb-3">
+            <div class="col-12 col-lg-5">
+              <div class="card-gp h-100">
+                <div class="p-3" id="sec-scorers"></div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-7">
+              <div class="card-gp h-100">
+                <div class="p-3" id="sec-minutes"></div>
+              </div>
+            </div>
+          </div>
+          <!-- ROW 9: League Tables -->
+          <div class="row g-3 mb-3">
+            <div class="col-12 col-lg-6" id="sec-pl-table"></div>
+            <div class="col-12 col-lg-6" id="sec-ucl-table"></div>
+          </div>
+          <div class="app-footer">
+            Gunners Pulse High Performance System © 2026
+          </div>
+        </div>
+      </main>
+    </div>
+    <script>
+        const DATA = {{ dashboard_json|safe }};
+        const MATCHES = {{ matches_json|safe }};
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'js/index.js' %}"></script>
+  </body>
+</html>

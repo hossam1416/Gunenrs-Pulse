@@ -1,0 +1,725 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gunners Pulse — Player Performance</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="{% static 'css/Perform.css' %}" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="app-wrap">
+      <!-- ═══════════════════════════ SIDEBAR ═══════════════════════════ -->
+      <aside class="sidebar">
+        <div class="sidebar-logo">
+          <img
+            class="siteLogo"
+            id="siteLogo"
+            src="{% static 'images/white_gun.jpg' %}"
+            alt="Gunners Pulse"
+            onerror="this.style.display = 'none'"
+          />
+        </div>
+        <nav class="sidebar-nav">
+          <a class="nav-link-item" href="{% url 'home' %}">
+            <span class="material-symbols-outlined">home</span><span>Home</span>
+          </a>
+          <a class="nav-link-item active" href="{% url 'basic' %}">
+            <span class="material-symbols-outlined">monitoring</span
+            ><span>Player Performance</span>
+          </a>
+          <a class="nav-link-item" href="{% url 'compare_players' %}">
+            <span class="material-symbols-outlined">compare_arrows</span
+            ><span>Compare Player</span>
+          </a>
+          <a class="nav-link-item" href="{% url 'tactics_page' %}">
+            <span class="material-symbols-outlined">strategy</span
+            ><span>Tactics</span>
+          </a>
+          <a class="nav-link-item" href="{% url 'training' %}">
+            <span class="material-symbols-outlined">fitness_center</span
+            ><span>Training</span>
+          </a>
+          <a class="nav-link-item" href="{% url 'medical_center' %}">
+            <span class="material-symbols-outlined">medical_services</span
+            ><span>Medical Center</span>
+          </a>
+          <a class="nav-link-item" href="{% url 'calendar_month' %}">
+            <span class="material-symbols-outlined">calendar_month</span
+            ><span>Calendar</span>
+          </a>
+          <a class="nav-link-item" href="{% url 'admin:index' %}">
+            <span class="material-symbols-outlined">settings</span
+            ><span>Setting</span>
+          </a>
+        </nav>
+        <div class="sidebar-footer">
+          <a class="nav-link-item" href="{% url 'logout' %}">
+            <span class="material-symbols-outlined">logout</span
+            ><span>Logout</span>
+          </a>
+        </div>
+      </aside>
+      <div class="mob-overlay" id="mobOverlay" onclick="closeSidebar()"></div>
+
+      <!-- ═══════════════════════════ MAIN ═══════════════════════════════ -->
+      <div class="main-wrap">
+        <header class="top-header">
+          <button
+            class="hamburger-btn d-lg-none"
+            onclick="openSidebar()"
+            aria-label="Open menu"
+          >
+            <span class="material-symbols-outlined">menu</span>
+          </button>
+          <div class="header-title">
+            <h1>Player Performance</h1>
+            <p>Gunners Pulse Performance Interface</p>
+          </div>
+          <div class="header-actions">
+            <button
+              class="theme-toggle-btn"
+              id="themeToggle"
+              title="Toggle dark mode"
+            >
+              <span class="material-symbols-outlined" id="themeIcon"
+                >dark_mode</span
+              >
+            </button>
+            <button class="notif-btn">
+              <span class="material-symbols-outlined">notifications</span>
+              <span class="notif-dot"></span>
+            </button>
+            <div class="user-profile">
+              <div class="text-end d-none d-md-block">
+                <div class="user-name">Mikel Arteta</div>
+                <div class="user-role">Head Coach</div>
+              </div>
+              <img class="avatar" src="{% static 'images/arteta h.p.jpg' %}" alt="Coach" />
+            </div>
+          </div>
+        </header>
+
+        <div class="main-scroll">
+          <!-- ── Summary Cards (Tab 1 only) ─────────────────────────────── -->
+          <div class="summary-grid" id="summaryCards"></div>
+
+          <!-- ── Filter Card (Tabs 1–3) ─────────────────────────────────── -->
+          <div class="filter-card" id="filterCard">
+            <div class="row g-3 align-items-end">
+              <div class="col-12 col-lg-9" id="filterFields">
+                <div class="row g-3">
+                  <div class="col-12 col-md-5">
+                    <label class="f-label">Player Search</label>
+                    <div class="f-wrap">
+                      <span class="material-symbols-outlined f-ico"
+                        >search</span
+                      >
+                      <input
+                        type="text"
+                        class="f-input"
+                        id="searchInput"
+                        placeholder="Name, position, number…"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <label class="f-label">Position</label>
+                    <div class="f-wrap">
+                      <select class="f-select" id="positionFilter">
+                        <option value="">All Positions</option>
+                        <option value="GK">Goalkeeper</option>
+                        <option value="DEF">Defender</option>
+                        <option value="MID">Midfielder</option>
+                        <option value="FWD">Forward</option>
+                      </select>
+                      <span class="material-symbols-outlined sel-arr"
+                        >expand_more</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Medical filter — only visible on Tab 1 -->
+                  <div class="col-12 col-md-3" id="medFilterWrap">
+                    <label class="f-label">Medical</label>
+                    <div class="f-wrap">
+                      <select class="f-select" id="medFilter">
+                        <option value="">All Status</option>
+                        <option value="fit">Fit</option>
+                        <option value="injured">Injured</option>
+                      </select>
+                      <span class="material-symbols-outlined sel-arr"
+                        >expand_more</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-3">
+                <div class="d-flex gap-2">
+                  <button class="btn-reset flex-fill" onclick="resetFilters()">
+                    <span
+                      class="material-symbols-outlined"
+                      style="font-size: 17px"
+                      >restart_alt</span
+                    >Reset
+                  </button>
+                  <button class="btn-export flex-fill" onclick="exportCSV()">
+                    <span
+                      class="material-symbols-outlined"
+                      style="font-size: 17px"
+                      >download</span
+                    >Export
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── Main Table Card ─────────────────────────────────────────── -->
+          <div class="table-card" id="mainTableCard">
+            <!-- TAB BAR -->
+            <div class="tab-bar">
+              <button
+                class="tab-btn active"
+                data-tab="tab1"
+                onclick="switchTab(this, 'tab1')"
+              >
+                Basic Info
+              </button>
+              <button
+                class="tab-btn"
+                data-tab="tab2"
+                onclick="switchTab(this, 'tab2')"
+              >
+                Performance
+              </button>
+              <button
+                class="tab-btn"
+                data-tab="tab3"
+                onclick="switchTab(this, 'tab3')"
+              >
+                Tactical Analysis
+              </button>
+              <button
+                class="tab-btn"
+                data-tab="tab4"
+                onclick="switchTab(this, 'tab4')"
+              >
+                Match History
+              </button>
+            </div>
+
+            <!-- ╔══════════════════════════════════════════════════════════╗
+                 ║  TAB 1 — Basic Info                                     ║
+                 ╚══════════════════════════════════════════════════════════╝ -->
+            <div class="tab-panel" id="tab1">
+              <div class="table-area">
+                <table class="data-table" style="min-width: 1600px">
+                  <thead>
+                    <tr class="tgr">
+                      <th class="cs"></th>
+                      <th colspan="3" class="br">Identity</th>
+                      <th colspan="5" class="br">Physical Profile</th>
+                      <th colspan="4" class="br">Contract &amp; Value</th>
+                      <th colspan="3">Availability</th>
+                    </tr>
+                    <tr class="tch">
+                      <th
+                        class="cs"
+                        style="text-align: left; padding-left: 20px"
+                      >
+                        Player
+                      </th>
+                      <th onclick="doSort('number')">
+                        #<span class="si material-symbols-outlined"
+                          >unfold_more</span
+                        >
+                      </th>
+                      <th onclick="doSort('primary')">
+                        Primary<span class="si material-symbols-outlined"
+                          >unfold_more</span
+                        >
+                      </th>
+                      <th class="br">Secondary</th>
+                      <th onclick="doSort('age')">
+                        Age<span class="si material-symbols-outlined"
+                          >unfold_more</span
+                        >
+                      </th>
+                      <th>Date of Birth</th>
+                      <th onclick="doSort('height')">
+                        Height(cm)<span class="si material-symbols-outlined"
+                          >unfold_more</span
+                        >
+                      </th>
+                      <th onclick="doSort('weight')">
+                        Weight(kg)<span class="si material-symbols-outlined"
+                          >unfold_more</span
+                        >
+                      </th>
+                      <th class="br">Foot</th>
+                      <th onclick="doSort('valueNum')">
+                        Value<span class="si material-symbols-outlined"
+                          >unfold_more</span
+                        >
+                      </th>
+                      <th>Trend</th>
+                      <th>Start Date</th>
+                      <th class="br">Expiry</th>
+                      <th onclick="doSort('fitness')">
+                        Fitness%<span class="si material-symbols-outlined"
+                          >unfold_more</span
+                        >
+                      </th>
+                      <th>Medical</th>
+                      <th>Cards Y/R</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tableBody1"></tbody>
+                </table>
+              </div>
+              <div class="table-footer">
+                <div class="d-flex align-items-center gap-3">
+                  <span class="pg-info" id="pgInfo1"></span>
+                  <div class="d-flex align-items-center gap-1">
+                    <span style="font-size: 12px; color: var(--text3)"
+                      >Rows:</span
+                    >
+                    <div class="rpp-wrap">
+                      <select
+                        class="rpp-sel"
+                        id="rppSel1"
+                        onchange="changeRPP()"
+                      >
+                        <option value="5">5</option>
+                        <option value="10" selected>10</option>
+                        <option value="999">All</option>
+                      </select>
+                      <span class="material-symbols-outlined rpp-arr"
+                        >expand_more</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-1" id="pgBtns1"></div>
+              </div>
+            </div>
+            <!-- /tab1 -->
+
+            <!-- ╔══════════════════════════════════════════════════════════╗
+                 ║  TAB 2 — Performance                                    ║
+                 ╚══════════════════════════════════════════════════════════╝ -->
+            <div class="tab-panel" id="tab2" style="display: none">
+              <div class="table-area">
+                <table class="data-table" style="min-width: 1600px">
+                  <thead>
+                    <tr class="tgr">
+                      <th class="cs"></th>
+                      <th colspan="5" class="br">Playing Time</th>
+                      <th colspan="5" class="br">Attacking Impact</th>
+                      <th colspan="5" class="br">Shooting</th>
+                      <th colspan="5">Discipline</th>
+                    </tr>
+                    <tr class="tch">
+                      <th
+                        class="cs"
+                        style="text-align: left; padding-left: 20px"
+                      >
+                        Player
+                      </th>
+                      <th>MP</th>
+                      <th>GS</th>
+                      <th>MIN</th>
+                      <th>Sub In</th>
+                      <th class="br">Out</th>
+                      <th style="color: var(--primary)">G</th>
+                      <th style="color: var(--primary)">A</th>
+                      <th>xG</th>
+                      <th>xA</th>
+                      <th class="br">Conv%</th>
+                      <th>SH</th>
+                      <th>SOT%</th>
+                      <th>In Box</th>
+                      <th>Out Box</th>
+                      <th class="br">FK Acc</th>
+                      <th>YC</th>
+                      <th>RC</th>
+                      <th>FC</th>
+                      <th>FS</th>
+                      <th>OFF</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tableBody2"></tbody>
+                </table>
+              </div>
+              <div class="table-footer">
+                <div class="d-flex align-items-center gap-3">
+                  <span class="pg-info" id="pgInfo2"></span>
+                  <div class="d-flex align-items-center gap-1">
+                    <span style="font-size: 12px; color: var(--text3)"
+                      >Rows:</span
+                    >
+                    <div class="rpp-wrap">
+                      <select
+                        class="rpp-sel"
+                        id="rppSel2"
+                        onchange="changeRPP()"
+                      >
+                        <option value="5">5</option>
+                        <option value="10" selected>10</option>
+                        <option value="999">All</option>
+                      </select>
+                      <span class="material-symbols-outlined rpp-arr"
+                        >expand_more</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-1" id="pgBtns2"></div>
+              </div>
+            </div>
+            <!-- /tab2 -->
+
+            <!-- ╔══════════════════════════════════════════════════════════╗
+                 ║  TAB 3 — Tactical Analysis                              ║
+                 ╚══════════════════════════════════════════════════════════╝ -->
+            <div class="tab-panel" id="tab3" style="display: none">
+              <div class="table-area">
+                <table class="data-table" style="min-width: 2000px">
+                  <thead>
+                    <tr class="tgr">
+                      <th class="cs"></th>
+                      <th colspan="5" class="br">Passing &amp; Playmaking</th>
+                      <th colspan="5" class="br">Defensive Contribution</th>
+                      <th colspan="4" class="br">Duel &amp; Physicality</th>
+                      <th colspan="4">Athletic Performance</th>
+                    </tr>
+                    <tr class="tch">
+                      <th
+                        class="cs"
+                        style="text-align: left; padding-left: 20px"
+                      >
+                        Player
+                      </th>
+                      <th>Pass Acc%</th>
+                      <th>Key Passes</th>
+                      <th>Final 3rd</th>
+                      <th>Long Balls%</th>
+                      <th class="br">Through Balls</th>
+                      <th>Tackles%</th>
+                      <th>Interceptions</th>
+                      <th>Ball Recov.</th>
+                      <th>Blocked Shots</th>
+                      <th class="br">Clearances</th>
+                      <th>Total Duels%</th>
+                      <th>Aerial%</th>
+                      <th>Ground%</th>
+                      <th class="br">Dribbles%</th>
+                      <th>Distance(km)</th>
+                      <th>HI Sprints</th>
+                      <th>Top Speed</th>
+                      <th>Density</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tableBody3"></tbody>
+                </table>
+              </div>
+              <div class="table-footer">
+                <div class="d-flex align-items-center gap-3">
+                  <span class="pg-info" id="pgInfo3"></span>
+                  <div class="d-flex align-items-center gap-1">
+                    <span style="font-size: 12px; color: var(--text3)"
+                      >Rows:</span
+                    >
+                    <div class="rpp-wrap">
+                      <select
+                        class="rpp-sel"
+                        id="rppSel3"
+                        onchange="changeRPP()"
+                      >
+                        <option value="5">5</option>
+                        <option value="10" selected>10</option>
+                        <option value="999">All</option>
+                      </select>
+                      <span class="material-symbols-outlined rpp-arr"
+                        >expand_more</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-1" id="pgBtns3"></div>
+              </div>
+            </div>
+            <!-- /tab3 -->
+
+            <!-- ╔══════════════════════════════════════════════════════════╗
+                 ║  TAB 4 — Match History                                  ║
+                 ╚══════════════════════════════════════════════════════════╝ -->
+            <div class="tab-panel" id="tab4" style="display: none">
+              <!-- Player Cards Selector -->
+              <div class="p4-cards-wrap" id="playerCardsRow"></div>
+
+              <!-- Selected Player Header -->
+              <div class="p4-player-header">
+                <div class="p4-avatar" id="p4_playerAvatar"></div>
+                <div class="p4-player-info">
+                  <p class="p4-player-name" id="p4_playerName">—</p>
+                  <p class="p4-player-meta" id="p4_playerMeta">—</p>
+                </div>
+                <div class="p4-form-strip" id="p4_formDots"></div>
+                <button
+                  class="btn-export"
+                  onclick="exportCSV()"
+                  style="margin-left: auto; flex-shrink: 0"
+                >
+                  <span
+                    class="material-symbols-outlined"
+                    style="font-size: 17px"
+                    >download</span
+                  >Export
+                </button>
+              </div>
+
+              <!-- Summary Chips Bar -->
+              <div class="p4-summary-bar" id="p4_summary"></div>
+
+              <!-- Match History Table -->
+              <div class="table-area">
+                <table class="data-table" style="min-width: 900px">
+                  <thead>
+                    <tr class="tgr">
+                      <th class="cs" colspan="2"></th>
+                      <th colspan="2" class="br">Match</th>
+                      <th class="br">Time</th>
+                      <th colspan="3" class="br">Attacking</th>
+                      <th class="br">Discipline</th>
+                      <th colspan="2" id="p4_posGroupHeader">Position Stats</th>
+                      <th>Rating</th>
+                    </tr>
+                    <tr class="tch">
+                      <th
+                        class="cs"
+                        style="text-align: left; padding-left: 20px"
+                      >
+                        Date
+                      </th>
+                      <th
+                        class="cs br"
+                        style="text-align: left; min-width: 130px"
+                      >
+                        Opponent
+                      </th>
+                      <th>Result</th>
+                      <th class="br">Score</th>
+                      <th class="br">Min</th>
+                      <th style="color: var(--primary)">G</th>
+                      <th style="color: var(--primary)">A</th>
+                      <th class="br" style="color: var(--primary)">G+A</th>
+                      <th class="br">Card</th>
+                      <th id="p4_dynH1">—</th>
+                      <th id="p4_dynH2">—</th>
+                      <th>Rating</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tableBody4"></tbody>
+                </table>
+              </div>
+            </div>
+            <!-- /tab4 -->
+          </div>
+          <!-- /table-card -->
+        </div>
+        <!-- /main-scroll -->
+      </div>
+      <!-- /main-wrap -->
+    </div>
+    <!-- /app-wrap -->
+
+    <div class="gp-tooltip" id="tooltip"></div>
+
+    <!-- ═══════════════════════════ SCRIPTS ════════════════════════════ -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- 1. Django data must be loaded before local JS files -->
+    <script>
+      window.PLAYERS_DATA = {{ players_json|safe }};
+      window.PERF_DATA = {{ perf_data_json|safe }};
+      window.TACT_DATA = {{ tact_data_json|safe }};
+      window.MATCH_HISTORY_DATA = {{ match_history_json|safe }};
+
+      console.log("PLAYERS:", window.PLAYERS_DATA);
+      console.log("PERF:", window.PERF_DATA);
+      console.log("TACT:", window.TACT_DATA);
+      console.log("MATCH:", window.MATCH_HISTORY_DATA);
+    </script>
+
+    <!-- 2. Tab switching -->
+    <script>
+      const TAB_CONFIG = {
+        tab1: { showSummary: true, showFilter: true, showMed: true },
+        tab2: { showSummary: false, showFilter: true, showMed: false },
+        tab3: { showSummary: false, showFilter: true, showMed: false },
+        tab4: { showSummary: false, showFilter: false, showMed: false },
+      };
+
+      let activeTab = "tab1";
+
+      function switchTab(btn, tabId) {
+        if (tabId === activeTab) return;
+
+        document
+          .querySelectorAll(".tab-btn")
+          .forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+
+        document.getElementById(activeTab).style.display = "none";
+        document.getElementById(tabId).style.display = "block";
+        activeTab = tabId;
+
+        const cfg = TAB_CONFIG[tabId];
+
+        document.getElementById("summaryCards").style.display = cfg.showSummary ? "" : "none";
+        document.getElementById("filterCard").style.display = cfg.showFilter ? "" : "none";
+        document.getElementById("medFilterWrap").style.display = cfg.showMed ? "" : "none";
+
+        const tableCard = document.getElementById("mainTableCard");
+        tableCard.style.height = tabId === "tab4" ? "calc(100vh - 112px)" : "";
+        tableCard.style.minHeight = tabId === "tab4" ? "500px" : "";
+
+        const renderFns = {
+          tab1: "renderTab1",
+          tab2: "renderTab2",
+          tab3: "renderTab3",
+          tab4: "renderTab4",
+        };
+
+        if (typeof window[renderFns[tabId]] === "function") {
+          window[renderFns[tabId]]();
+        }
+      }
+    </script>
+
+    <!-- 3. Local JS files: load once only and after Django data -->
+    <script src="{% static 'js/Perform.js' %}"></script>
+    <script src="{% static 'js/Perform-1.js' %}"></script>
+    <script src="{% static 'js/Perform-2.js' %}"></script>
+    <script src="{% static 'js/Perform-3.js' %}"></script>
+    <script src="{% static 'js/Perform-4.js' %}"></script>
+
+    <!-- 4. Global handlers used by buttons/selects/pagination -->
+    <script>
+      window.changePage = function(p) {
+        if (activeTab === "tab1" && typeof p1_changePage === "function") {
+          p1_changePage(p);
+        } else if (activeTab === "tab2" && typeof p2_changePage === "function") {
+          p2_changePage(p);
+        } else if (activeTab === "tab3" && typeof p3_changePage === "function") {
+          p3_changePage(p);
+        }
+      };
+
+      window.changeRPP = function() {
+        if (activeTab === "tab1" && typeof p1_changeRPP === "function") {
+          p1_changeRPP();
+        } else if (activeTab === "tab2" && typeof p2_changeRPP === "function") {
+          p2_changeRPP();
+        } else if (activeTab === "tab3" && typeof p3_changeRPP === "function") {
+          p3_changeRPP();
+        }
+      };
+
+      window.resetFilters = function() {
+        const searchInput = document.getElementById("searchInput");
+        const positionFilter = document.getElementById("positionFilter");
+        const medFilter = document.getElementById("medFilter");
+
+        if (searchInput) searchInput.value = "";
+        if (positionFilter) positionFilter.value = "";
+        if (medFilter) medFilter.value = "";
+
+        if (activeTab === "tab1" && typeof p1_resetFilters === "function") {
+          p1_resetFilters();
+        } else if (activeTab === "tab2" && typeof p2_resetFilters === "function") {
+          p2_resetFilters();
+        } else if (activeTab === "tab3" && typeof p3_resetFilters === "function") {
+          p3_resetFilters();
+        } else if (activeTab === "tab4" && typeof p4_resetFilters === "function") {
+          p4_resetFilters();
+        }
+      };
+
+      window.exportCSV = function() {
+        if (activeTab === "tab1" && typeof p1_exportCSV === "function") {
+          p1_exportCSV();
+        } else if (activeTab === "tab2" && typeof p2_exportCSV === "function") {
+          p2_exportCSV();
+        } else if (activeTab === "tab3" && typeof p3_exportCSV === "function") {
+          p3_exportCSV();
+        } else if (activeTab === "tab4") {
+          if (
+            typeof p4_selectedIdx !== "undefined" &&
+            typeof MATCH_HISTORY_DATA !== "undefined" &&
+            MATCH_HISTORY_DATA[p4_selectedIdx]
+          ) {
+            const player = MATCH_HISTORY_DATA[p4_selectedIdx];
+            const posCols =
+              typeof POS_COLS !== "undefined" && POS_COLS[player.posGroup]
+                ? POS_COLS[player.posGroup]
+                : [];
+
+            const headers = [
+              "Date",
+              "Opponent",
+              "H/A",
+              "Result",
+              "Score",
+              "Min",
+              "G",
+              "A",
+              "G+A",
+              "Card",
+              ...posCols.map((c) => c.label),
+              "Rating",
+            ];
+
+            const rows = player.matches.map((m) => [
+              m.date,
+              m.opponent,
+              m.home ? "H" : "A",
+              m.result,
+              m.score,
+              m.min,
+              m.g,
+              m.a,
+              m.g + m.a,
+              m.rc ? "RC" : m.yc ? "YC" : "—",
+              ...posCols.map((c) => m[c.key] ?? ""),
+              m.rating,
+            ]);
+
+            if (typeof downloadCSV === "function") {
+              downloadCSV(
+                headers,
+                rows,
+                `${player.name.replace(/\s+/g, "-")}-match-history.csv`
+              );
+            }
+          }
+        }
+      };
+    </script>
+
+  </body>
+</html>

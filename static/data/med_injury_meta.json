@@ -1,0 +1,53 @@
+{
+  "Jurrien Timber": {
+    "injury": "Groin (Adductor)",
+    "grade": "Grade 2",
+    "severity": "high",
+    "status": "absent",
+    "statusLabel": "Fully Absent",
+    "statusClass": "status-absent",
+    "injuryDate": "14 Mar 2026",
+    "returnDate": "31 May 2026",
+    "recovery": 70,
+    "daysLeft": 12,
+    "daysClass": "days-urgent",
+    "progClass": "prog-amber",
+    "cardClass": "inj-card--high",
+    "badgeClass": "badge-high",
+    "badgeLabel": "High Severity"
+  },
+  "Mikel Merino": {
+    "injury": "Stress Fracture (Right Foot)",
+    "grade": "Grade 3",
+    "severity": "high",
+    "status": "absent",
+    "statusLabel": "Fully Absent",
+    "statusClass": "status-absent",
+    "injuryDate": "25 Jan 2026",
+    "returnDate": "25 May 2026",
+    "recovery": 85,
+    "daysLeft": 6,
+    "daysClass": "days-urgent",
+    "progClass": "prog-amber",
+    "cardClass": "inj-card--high",
+    "badgeClass": "badge-high",
+    "badgeLabel": "High Severity"
+  },
+  "Ben White": {
+    "injury": "Medial Knee Ligament (MCL)",
+    "grade": "Grade 2",
+    "severity": "high",
+    "status": "absent",
+    "statusLabel": "Season Ended",
+    "statusClass": "status-absent",
+    "injuryDate": "11 May 2026",
+    "returnDate": "01 Aug 2026",
+    "recovery": 5,
+    "daysLeft": 74,
+    "daysClass": "days-low",
+    "progClass": "prog-red",
+    "cardClass": "inj-card--high",
+    "badgeClass": "badge-high",
+    "badgeLabel": "High Severity"
+  }
+}

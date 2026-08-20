@@ -1,0 +1,512 @@
+{
+  "GK": {
+    "label": "Goalkeeper",
+    "roles": [
+      {
+        "name": "Goalkeeper",
+        "focuses": ["Defend", "Balanced"],
+        "description": "Traditional goalkeeper. Stays on the line, focuses on shot-stopping.",
+        "focusDesc": {
+          "Defend": "Won't rush out to collect long or loose balls. Low risk.",
+          "Balanced": "Occasionally leaves area to collect long or loose balls."
+        }
+      },
+      {
+        "name": "Sweeper Keeper",
+        "focuses": ["Balanced", "Build-Up"],
+        "description": "Modern keeper who stops attacks and supports build-up play.",
+        "focusDesc": {
+          "Balanced": "Leaves area to collect balls close to the box.",
+          "Build-Up": "Pushes higher up to collect the ball and support play."
+        }
+      },
+      {
+        "name": "Ball-Playing Keeper",
+        "focuses": ["Build-Up"],
+        "description": "Focused on supporting build-up play. Stays on line during defensive phases.",
+        "focusDesc": {
+          "Build-Up": "Actively joins build-up, offers safe passing option. Doesn't rush far out."
+        }
+      }
+    ]
+  },
+  "CB": {
+    "label": "Centre-Back",
+    "roles": [
+      {
+        "name": "Defender",
+        "focuses": ["Defend", "Balanced"],
+        "description": "No-nonsense CB who excels at the basics and maintains the defensive line.",
+        "focusDesc": {
+          "Defend": "Focuses only on defensive responsibilities. Stays back.",
+          "Balanced": "Steps up to close down attackers when needed."
+        }
+      },
+      {
+        "name": "Stopper",
+        "focuses": ["Balanced", "Aggressive", "Defend"],
+        "description": "Ball-winning CB who steps forward to tackle, intercept and press.",
+        "focusDesc": {
+          "Balanced": "Intercepts passes and pressures attackers receiving the ball.",
+          "Aggressive": "Pushes into base of midfield to intercept and close down.",
+          "Defend": "Holds position, steps up only when necessary."
+        }
+      },
+      {
+        "name": "Ball-Playing Defender",
+        "focuses": ["Defend", "Build-Up", "Aggressive"],
+        "description": "Modern CB comfortable on the ball. Moves forward/wider to support build-up.",
+        "focusDesc": {
+          "Defend": "Steps up a little to support teammates during possession.",
+          "Build-Up": "Moves into a holding DM role during possession.",
+          "Aggressive": "Focuses on intercepting passes and closing down opponents."
+        }
+      },
+      {
+        "name": "Wide Back",
+        "focuses": ["Defend", "Aggressive", "Support"],
+        "description": "Central defender who shifts wide to cover advancing fullbacks. Ideal in back-three.",
+        "focusDesc": {
+          "Defend": "Protects the back line, tracks opposition down the wings.",
+          "Aggressive": "Steps higher or wider to press opponents early.",
+          "Support": "Covers defensive duties and extends possession down the flank."
+        }
+      }
+    ]
+  },
+  "LB": {
+    "label": "Left-Back",
+    "roles": [
+      {
+        "name": "Fullback",
+        "focuses": ["Defend", "Balanced", "Versatile"],
+        "description": "Wide defender prioritising protecting their own goal. Holds line and offers passing option.",
+        "focusDesc": {
+          "Defend": "Moves inside to form a back three when team is in possession.",
+          "Balanced": "Given more freedom to push slightly forward and wider.",
+          "Versatile": "Adapts between defensive and offensive duties based on game state."
+        }
+      },
+      {
+        "name": "Falseback",
+        "focuses": ["Defend", "Balanced"],
+        "description": "Modern fullback who adopts a central position when team has the ball.",
+        "focusDesc": {
+          "Balanced": "Positions as a Central Midfielder when team is in possession.",
+          "Defend": "Operates as a Defensive Midfielder when team has the ball."
+        }
+      },
+      {
+        "name": "Wingback",
+        "focuses": ["Support", "Balanced"],
+        "description": "Versatile and stamina-driven. Pushes upfield to support attacks, then returns to defend.",
+        "focusDesc": {
+          "Support": "Only attacks with controlled possession. Defends when ball is lost.",
+          "Balanced": "License to stay forward even out of possession, or drop back as needed."
+        }
+      },
+      {
+        "name": "Attacking Wingback",
+        "focuses": ["Balanced", "Attack"],
+        "description": "Technically a defender but more concerned with getting forward and offering width.",
+        "focusDesc": {
+          "Balanced": "Rarely sprints back to defend unless hit on the counter.",
+          "Attack": "Pushes even higher up the pitch. Fewer defensive duties."
+        }
+      },
+      {
+        "name": "Inverted Wingback",
+        "focuses": ["Build-Up", "Attack"],
+        "description": "Cuts inside to support central play rather than hugging the touchline.",
+        "focusDesc": {
+          "Build-Up": "Moves centrally to support possession and link midfield.",
+          "Attack": "Pushes into the box as an extra attacker."
+        }
+      }
+    ]
+  },
+  "RB": {
+    "label": "Right-Back",
+    "roles": [
+      {
+        "name": "Fullback",
+        "focuses": ["Defend", "Balanced", "Versatile"],
+        "description": "Wide defender prioritising protecting their own goal. Holds line and offers passing option.",
+        "focusDesc": {
+          "Defend": "Moves inside to form a back three when team is in possession.",
+          "Balanced": "Given more freedom to push slightly forward and wider.",
+          "Versatile": "Adapts between defensive and offensive duties based on game state."
+        }
+      },
+      {
+        "name": "Falseback",
+        "focuses": ["Defend", "Balanced"],
+        "description": "Modern fullback who adopts a central position when team has the ball.",
+        "focusDesc": {
+          "Balanced": "Positions as a Central Midfielder when team is in possession.",
+          "Defend": "Operates as a Defensive Midfielder when team has the ball."
+        }
+      },
+      {
+        "name": "Wingback",
+        "focuses": ["Support", "Balanced"],
+        "description": "Versatile and stamina-driven. Pushes upfield to support attacks, then returns to defend.",
+        "focusDesc": {
+          "Support": "Only attacks with controlled possession. Defends when ball is lost.",
+          "Balanced": "License to stay forward even out of possession, or drop back as needed."
+        }
+      },
+      {
+        "name": "Attacking Wingback",
+        "focuses": ["Balanced", "Attack"],
+        "description": "Technically a defender but more concerned with getting forward and offering width.",
+        "focusDesc": {
+          "Balanced": "Rarely sprints back to defend unless hit on the counter.",
+          "Attack": "Pushes even higher up the pitch. Fewer defensive duties."
+        }
+      },
+      {
+        "name": "Inverted Wingback",
+        "focuses": ["Build-Up", "Attack"],
+        "description": "Cuts inside to support central play rather than hugging the touchline.",
+        "focusDesc": {
+          "Build-Up": "Moves centrally to support possession and link midfield.",
+          "Attack": "Pushes into the box as an extra attacker."
+        }
+      }
+    ]
+  },
+  "CDM": {
+    "label": "Defensive Midfielder",
+    "roles": [
+      {
+        "name": "Holding",
+        "focuses": ["Ball-Winning", "Roaming", "Defend"],
+        "description": "Dedicated to protecting the backline. Defends aggressively or covers passing lanes.",
+        "focusDesc": {
+          "Ball-Winning": "Aggressively wins the ball and intercepts passes.",
+          "Roaming": "Moves across the pitch to close passing lanes and press attackers.",
+          "Defend": "Stays deeper, protects the defence, offers a passing outlet."
+        }
+      },
+      {
+        "name": "Deep-Lying Playmaker",
+        "focuses": ["Build-Up", "Roaming", "Defend"],
+        "description": "Creative midfielder who builds play from deep. Supports defence and attack with incisive passing.",
+        "focusDesc": {
+          "Build-Up": "Moves forward and supports attacks with passes.",
+          "Roaming": "Moves across the pitch width to offer support.",
+          "Defend": "Holds position, breaks up opposition moves, distributes from deep."
+        }
+      },
+      {
+        "name": "Centre-Half",
+        "focuses": ["Defend"],
+        "description": "Drops back between the CBs in possession. Extra cover against counter attacks.",
+        "focusDesc": {
+          "Defend": "Drops into the defensive line, provides cover and security."
+        }
+      },
+      {
+        "name": "Wide Half",
+        "focuses": ["Build-Up", "Defend"],
+        "description": "Covers sides of the pitch and fills wide defensive positions when needed.",
+        "focusDesc": {
+          "Build-Up": "Supports moves out wide and pushes forward into wide areas.",
+          "Defend": "Drops into fullback or wingback positions as needed."
+        }
+      },
+      {
+        "name": "Box Crasher",
+        "focuses": ["Balanced"],
+        "description": "Surprise runner from deep midfield. Times runs into the box for goal-scoring opportunities.",
+        "focusDesc": {
+          "Balanced": "Balances defensive duties with timely runs into the attacking box."
+        }
+      }
+    ]
+  },
+  "CM": {
+    "label": "Centre Midfielder",
+    "roles": [
+      {
+        "name": "Box-to-Box",
+        "focuses": ["Balanced", "Ball-Winning"],
+        "description": "Energetic midfielder who contributes at both ends of the pitch.",
+        "focusDesc": {
+          "Balanced": "Balances attacking and defensive contributions across the pitch.",
+          "Ball-Winning": "More aggressive in duels and pressing. Prioritises winning the ball back."
+        }
+      },
+      {
+        "name": "Holding",
+        "focuses": ["Defend"],
+        "description": "Sits deep in midfield to protect the backline and screen the defence.",
+        "focusDesc": {
+          "Defend": "Stays disciplined, screens the defence, limits forward runs."
+        }
+      },
+      {
+        "name": "Deep-Lying Playmaker",
+        "focuses": ["Defend"],
+        "description": "Builds play from deep central areas. Creative but disciplined.",
+        "focusDesc": {
+          "Defend": "Holds position while distributing the ball from deep."
+        }
+      },
+      {
+        "name": "Playmaker",
+        "focuses": ["Attack", "Roaming"],
+        "description": "Creative midfielder who links midfield and attack with clever passing and movement.",
+        "focusDesc": {
+          "Attack": "Pushes forward to create chances. More advanced positioning.",
+          "Roaming": "Moves freely to find pockets of space and link play."
+        }
+      },
+      {
+        "name": "Half-Winger",
+        "focuses": ["Support", "Balanced", "Attack"],
+        "description": "Wide-positioned midfielder who can stretch play or cut inside.",
+        "focusDesc": {
+          "Support": "Offers width and link-up play without overcommitting forward.",
+          "Balanced": "Balances wide support with central involvement.",
+          "Attack": "Pushes high and wide to stretch the defence and create chances."
+        }
+      }
+    ]
+  },
+  "LM": {
+    "label": "Left Midfielder",
+    "roles": [
+      {
+        "name": "Winger",
+        "focuses": ["Balanced", "Attack", "Versatile"],
+        "description": "Wide attacker who hugs the touchline, delivers crosses or cuts inside.",
+        "focusDesc": {
+          "Balanced": "Mix of wide play and tracking back. Moderate defensive duties.",
+          "Attack": "Pushes as high and wide as possible. Minimal defensive work.",
+          "Versatile": "Adapts role based on game state and team positioning."
+        }
+      },
+      {
+        "name": "Wide Midfielder",
+        "focuses": ["Defend", "Support", "Build-Up"],
+        "description": "Traditional wide midfielder with strong defensive and offensive contributions.",
+        "focusDesc": {
+          "Defend": "Prioritises defensive tracking and wide defensive coverage.",
+          "Support": "Offers width and passing options without overcommitting either way.",
+          "Build-Up": "Drops deeper to support possession and link play."
+        }
+      },
+      {
+        "name": "Wide Playmaker",
+        "focuses": ["Attack"],
+        "description": "Creative wide player who finds pockets of space and creates chances from the flank.",
+        "focusDesc": {
+          "Attack": "Pushes forward to create chances from wide areas."
+        }
+      },
+      {
+        "name": "Inside Forward",
+        "focuses": ["Balanced", "Attack"],
+        "description": "Wide attacker who cuts inside onto their stronger foot to shoot or create.",
+        "focusDesc": {
+          "Balanced": "Cuts inside but also tracks back. Balanced contribution.",
+          "Attack": "Stays high and central. Minimal defensive duties."
+        }
+      }
+    ]
+  },
+  "RM": {
+    "label": "Right Midfielder",
+    "roles": [
+      {
+        "name": "Winger",
+        "focuses": ["Balanced", "Attack", "Versatile"],
+        "description": "Wide attacker who hugs the touchline, delivers crosses or cuts inside.",
+        "focusDesc": {
+          "Balanced": "Mix of wide play and tracking back. Moderate defensive duties.",
+          "Attack": "Pushes as high and wide as possible. Minimal defensive work.",
+          "Versatile": "Adapts role based on game state and team positioning."
+        }
+      },
+      {
+        "name": "Wide Midfielder",
+        "focuses": ["Defend", "Support", "Build-Up"],
+        "description": "Traditional wide midfielder with strong defensive and offensive contributions.",
+        "focusDesc": {
+          "Defend": "Prioritises defensive tracking and wide defensive coverage.",
+          "Support": "Offers width and passing options without overcommitting either way.",
+          "Build-Up": "Drops deeper to support possession and link play."
+        }
+      },
+      {
+        "name": "Wide Playmaker",
+        "focuses": ["Attack"],
+        "description": "Creative wide player who finds pockets of space and creates chances from the flank.",
+        "focusDesc": {
+          "Attack": "Pushes forward to create chances from wide areas."
+        }
+      },
+      {
+        "name": "Inside Forward",
+        "focuses": ["Balanced", "Attack"],
+        "description": "Wide attacker who cuts inside onto their stronger foot to shoot or create.",
+        "focusDesc": {
+          "Balanced": "Cuts inside but also tracks back. Balanced contribution.",
+          "Attack": "Stays high and central. Minimal defensive duties."
+        }
+      }
+    ]
+  },
+  "CAM": {
+    "label": "Attacking Midfielder",
+    "roles": [
+      {
+        "name": "Playmaker",
+        "focuses": ["Balanced", "Roaming"],
+        "description": "Creative #10 who links midfield and attack. Creates chances through clever movement.",
+        "focusDesc": {
+          "Balanced": "Stays in half-space, balanced contribution in and out of possession.",
+          "Roaming": "Moves freely to find space and create overloads."
+        }
+      },
+      {
+        "name": "Shadow Striker",
+        "focuses": ["Attack"],
+        "description": "Makes late runs beyond the striker. Arrives in the box from deep positions.",
+        "focusDesc": {
+          "Attack": "Pushes high, makes runs beyond the striker, focuses on scoring."
+        }
+      },
+      {
+        "name": "Half-Winger",
+        "focuses": ["Roaming", "Balanced", "Attack"],
+        "description": "Drifts wide from CAM position to stretch the play and create from the flank.",
+        "focusDesc": {
+          "Roaming": "Moves freely across the width of the pitch.",
+          "Balanced": "Balances central and wide involvement.",
+          "Attack": "Stays high and wide. More of an additional winger."
+        }
+      },
+      {
+        "name": "Classic 10",
+        "focuses": ["Versatile", "Wide", "Attack"],
+        "description": "Traditional number 10. Drops deep to receive, turns, and plays forward.",
+        "focusDesc": {
+          "Versatile": "Flexible role - adapts between deep and high positions.",
+          "Wide": "Drifts wide to find space and create from wider areas.",
+          "Attack": "Stays high centrally, acts as a second striker."
+        }
+      }
+    ]
+  },
+  "LW": {
+    "label": "Left Winger",
+    "roles": [
+      {
+        "name": "Winger",
+        "focuses": ["Balanced", "Attack", "Versatile"],
+        "description": "Wide attacker who hugs the touchline, delivers crosses, or cuts inside.",
+        "focusDesc": {
+          "Balanced": "Mix of wide play and tracking back. Moderate defensive duties.",
+          "Attack": "Pushes as high and wide as possible. Minimal defensive work.",
+          "Versatile": "Adapts role based on game state and team positioning."
+        }
+      },
+      {
+        "name": "Inside Forward",
+        "focuses": ["Balanced", "Attack", "Roaming"],
+        "description": "Cuts inside onto stronger foot to shoot or create. Threatens goal directly.",
+        "focusDesc": {
+          "Balanced": "Cuts inside but also tracks back. Balanced contribution.",
+          "Attack": "Stays high. Cuts inside aggressively. Minimal defensive duties.",
+          "Roaming": "Moves freely to find pockets of space across the front line."
+        }
+      },
+      {
+        "name": "Wide Playmaker",
+        "focuses": ["Attack"],
+        "description": "Creative wide player who creates chances from the flank with clever passing.",
+        "focusDesc": {
+          "Attack": "Pushes high and wide. Focuses on creating chances from the left."
+        }
+      }
+    ]
+  },
+  "RW": {
+    "label": "Right Winger",
+    "roles": [
+      {
+        "name": "Winger",
+        "focuses": ["Balanced", "Attack", "Versatile"],
+        "description": "Wide attacker who hugs the touchline, delivers crosses, or cuts inside.",
+        "focusDesc": {
+          "Balanced": "Mix of wide play and tracking back. Moderate defensive duties.",
+          "Attack": "Pushes as high and wide as possible. Minimal defensive work.",
+          "Versatile": "Adapts role based on game state and team positioning."
+        }
+      },
+      {
+        "name": "Inside Forward",
+        "focuses": ["Balanced", "Attack", "Roaming"],
+        "description": "Cuts inside onto stronger foot to shoot or create. Threatens goal directly.",
+        "focusDesc": {
+          "Balanced": "Cuts inside but also tracks back. Balanced contribution.",
+          "Attack": "Stays high. Cuts inside aggressively. Minimal defensive duties.",
+          "Roaming": "Moves freely to find pockets of space across the front line."
+        }
+      },
+      {
+        "name": "Wide Playmaker",
+        "focuses": ["Attack"],
+        "description": "Creative wide player who creates chances from the flank with clever passing.",
+        "focusDesc": {
+          "Attack": "Pushes high and wide. Focuses on creating chances from the right."
+        }
+      }
+    ]
+  },
+  "ST": {
+    "label": "Striker",
+    "roles": [
+      {
+        "name": "Advanced Forward",
+        "focuses": ["Attack", "Versatile"],
+        "description": "Traditional striker who makes runs in behind and finishes in the box.",
+        "focusDesc": {
+          "Attack": "Pushes the defensive line back constantly. Focuses on scoring.",
+          "Versatile": "Drops deeper to link play or runs in behind depending on game state."
+        }
+      },
+      {
+        "name": "Poacher",
+        "focuses": ["Attack", "Versatile"],
+        "description": "Penalty box specialist who focuses entirely on being in the right place to score.",
+        "focusDesc": {
+          "Attack": "Stays central and high. Always in position to finish.",
+          "Versatile": "Adapts positioning depending on build-up play."
+        }
+      },
+      {
+        "name": "False 9",
+        "focuses": ["Build-Up", "Attack"],
+        "description": "Drops into midfield to create space and link play. Pulls CBs out of position.",
+        "focusDesc": {
+          "Build-Up": "Drops deep consistently to link midfield and attack.",
+          "Attack": "Balances dropping deep with runs in behind."
+        }
+      },
+      {
+        "name": "Target Forward",
+        "focuses": ["Balanced", "Attack", "Wide"],
+        "description": "Powerful physical striker who holds up the ball and brings others into play.",
+        "focusDesc": {
+          "Balanced": "Mix of holding up play and making runs in behind.",
+          "Attack": "Stays central and high, focuses on winning headers and finishing.",
+          "Wide": "Drifts wide to create space centrally and receive crosses."
+        }
+      }
+    ]
+  }
+}

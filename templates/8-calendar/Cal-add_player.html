@@ -1,0 +1,192 @@
+{% load static %}
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gunners Pulse – Agenda</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'css/Cal_player.css' %}" />
+  </head>
+  <body>
+    <div class="app-wrapper">
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-logo">
+          <img
+            class="siteLogo"
+            id="siteLogo"
+            src="{% static 'images/white_gun_p.jpg' %}"
+            alt="Gunners Pulse"
+            onerror="this.style.display = 'none'"
+          />
+        </div>
+        <nav class="sidebar-nav">
+          <a class="nav-link-item" href="{% url 'player_home' %}"
+            ><span class="material-symbols-outlined">home</span
+            ><span>Home</span></a
+          >
+          <a class="nav-link-item" href="{% url 'player_performance' %}"
+            ><span class="material-symbols-outlined">monitoring</span
+            ><span>Player Performance</span></a
+          >
+          <a class="nav-link-item" href="{% url 'player_tactics' %}"
+            ><span class="material-symbols-outlined">strategy</span
+            ><span>Tactics</span></a
+          >
+          <a class="nav-link-item" href="{% url 'player_training' %}"
+            ><span class="material-symbols-outlined">fitness_center</span
+            ><span>Training</span></a
+          >
+          <a class="nav-link-item active" href="{% url 'player_calendar' %}"
+            ><span class="material-symbols-outlined">calendar_month</span
+            ><span>Calendar</span></a
+          >
+          <a class="nav-link-item" href="{% url 'admin:index' %}"
+            ><span class="material-symbols-outlined">settings</span
+            ><span>Settings</span></a
+          >
+        </nav>
+        <div class="sidebar-footer">
+          <a class="nav-link-item" href="{% url 'logout' %}"
+            ><span class="material-symbols-outlined">logout</span
+            ><span>Logout</span></a
+          >
+        </div>
+      </aside>
+
+      <div class="mob-overlay" id="mobOverlay"></div>
+
+      <main class="main-content">
+        <header class="top-header">
+          <button class="hamburger-btn d-lg-none" id="hamburgerBtn">
+            <span class="material-symbols-outlined">menu</span>
+          </button>
+          <div class="header-title">
+            <h1>Schedule Agenda</h1>
+            <p class="d-none d-md-block">
+              Upcoming Fixtures · Sessions · Recovery
+            </p>
+          </div>
+          <div class="d-flex align-items-center gap-2 ms-auto">
+            <button class="icon-btn" id="themeToggle">
+              <span class="material-symbols-outlined" id="themeIcon"
+                >light_mode</span
+              >
+            </button>
+            <div class="notif-btn" id="notifBtn" title="Notifications">
+              <span class="material-symbols-outlined">notifications</span>
+              <span
+                class="notif-dot"
+                id="notifDot"
+                style="display: none"
+              ></span>
+              <span class="notif-count" id="notifCount" style="display: none"
+                >0</span
+              >
+            </div>
+            <div
+              class="user-profile d-flex align-items-center gap-2 ps-2 border-start"
+            >
+              <div class="d-none d-md-block">
+                <div class="user-name">
+                  {{ current_player.name|default:"No linked player" }}
+                </div>
+                <div class="user-role">
+                  {{ current_player.primary|default:"Player" }} · #{{
+                  current_player.number|default:"—" }}
+                </div>
+              </div>
+              <img
+                class="avatar"
+                src="{{ current_player.img|default:'/static/images/white_gun.jpg' }}"
+                alt="{{ current_player.name|default:'Player' }}"
+                onerror="this.style.display = 'none'"
+              />
+            </div>
+          </div>
+        </header>
+
+        <div class="cal-toolbar">
+          <div class="cal-nav">
+            <span class="cal-month-label">Next 90 Days</span>
+          </div>
+          <div class="cal-view-switcher">
+            <a class="cal-view-btn" href="{% url 'player_calendar' %}">Month</a>
+            <a
+              class="cal-view-btn active"
+              href="{% url 'player_calendar_agenda' %}"
+              >Agenda</a
+            >
+          </div>
+        </div>
+
+        <div class="agenda-wrapper">
+          <div id="agendaList"></div>
+        </div>
+
+        <div class="cal-legend">
+          <span class="legend-item"
+            ><span class="legend-dot match"></span>Match</span
+          >
+          <span class="legend-item"
+            ><span class="legend-dot training"></span>Training</span
+          >
+          <span class="legend-item"
+            ><span class="legend-dot set"></span>Day off</span
+          >
+          <span class="legend-item"
+            ><span class="legend-dot recovery"></span>Recovery</span
+          >
+        </div>
+      </main>
+    </div>
+
+    <!-- EVENT PANEL — read only -->
+    <div class="event-panel" id="eventPanel">
+      <div class="event-panel-header">
+        <div>
+          <span class="event-panel-badge" id="panelBadge">EVENT</span>
+          <h3 class="event-panel-title" id="panelTitle">–</h3>
+          <div class="event-panel-meta">
+            <span class="material-symbols-outlined">calendar_today</span
+            ><span id="panelDate">–</span>
+            <span class="material-symbols-outlined ms-2">schedule</span
+            ><span id="panelTime">–</span>
+          </div>
+        </div>
+        <button class="event-panel-close" id="closePanel">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      <div class="event-panel-body">
+        <div class="event-panel-venue">
+          <span class="material-symbols-outlined">location_on</span>
+          <span id="panelVenueText">–</span>
+        </div>
+        <div class="event-panel-notes" id="panelNotes"></div>
+        <div class="readonly-badge">
+          <span class="material-symbols-outlined">lock</span> View Only
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      window.PLAYER_CALENDAR_DATA = {{ player_calendar_json|default:"{}"|safe }};
+    </script>
+
+    <script src="{% static 'js/Cal_player.js' %}"></script>
+  </body>
+</html>
