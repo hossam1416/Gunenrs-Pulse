@@ -3,6 +3,8 @@
 A football management web app built with Django. It has two sides: one for the coach and one for the player.
 
 ---
+Live Demo
+https://gunenrs-pulse.onrender.com
 
 ## Overview
 
